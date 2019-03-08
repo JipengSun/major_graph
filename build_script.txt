@@ -1,0 +1,37 @@
+LOAD CSV WITH HEADERS FROM 'file:///1to2.csv' AS line
+CREATE (:KP { name: line.Node2, level: 2})
+
+LOAD CSV WITH HEADERS FROM 'file:///2to3.csv' AS line
+CREATE (:KP { name: line.Node3, level: 3})
+
+LOAD CSV WITH HEADERS FROM 'file:///3to4.csv' AS line
+CREATE (:KP { name: line.Node4, level: 4})
+
+LOAD CSV WITH HEADERS FROM 'file:///4to5.csv' AS line
+CREATE (:KP { name: line.Node5, level: 5})
+
+match(n{name:'数据库系统'})
+delete n
+
+CREATE (n:KP { name: '数据库系统', level:1 })
+
+LOAD CSV  WITH HEADERS FROM "file:///1to2.csv" AS line
+MATCH (entity1:KP{name:line.Node1,level:1}) , (entity2:KP{name:line.Node2,level:2})
+CREATE (entity1)-[:RELATION { relation: line.Relation }]->(entity2)
+
+LOAD CSV  WITH HEADERS FROM "file:///2to3.csv" AS line
+MATCH (entity1:KP{name:line.Node2,level:2}) , (entity2:KP{name:line.Node3,level:3})
+CREATE (entity1)-[:RELATION { relation: line.Relation }]->(entity2)
+
+LOAD CSV  WITH HEADERS FROM "file:///3to4.csv" AS line
+MATCH (entity1:KP{name:line.Node3,level:3}) , (entity2:KP{name:line.Node4,level:4})
+CREATE (entity1)-[:RELATION { relation: line.Relation }]->(entity2)
+
+LOAD CSV  WITH HEADERS FROM "file:///4to5.csv" AS line
+MATCH (entity1:KP{name:line.Node4,level:4}) , (entity2:KP{name:line.Node5,level:5})
+CREATE (entity1)-[:RELATION { relation: line.Relation }]->(entity2)
+
+LOAD CSV  WITH HEADERS FROM "file:///4to5.csv" AS line
+MATCH (n:KP{name:line.Node5,level:5})
+SET n.contents=line.contents
+return entity1
