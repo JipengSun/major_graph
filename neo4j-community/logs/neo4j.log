@@ -4,3 +4,4 @@
 2019-03-08 02:03:21.958+0000 INFO  Started.
 2019-03-08 02:03:24.035+0000 INFO  Remote interface available at http://localhost:7474/
 2019-03-08 02:03:28.878+0000 WARN  The client is unauthorized due to authentication failure.
+2019-03-12 08:35:35.399+0000 WARN  The client is unauthorized due to authentication failure.
