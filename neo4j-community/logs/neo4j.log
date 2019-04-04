@@ -5,3 +5,6 @@
 2019-03-08 02:03:24.035+0000 INFO  Remote interface available at http://localhost:7474/
 2019-03-08 02:03:28.878+0000 WARN  The client is unauthorized due to authentication failure.
 2019-03-12 08:35:35.399+0000 WARN  The client is unauthorized due to authentication failure.
+2019-03-28 12:45:01.572+0000 INFO  Neo4j Server shutdown initiated by request
+2019-03-28 12:45:02.305+0000 INFO  Stopping...
+2019-03-28 12:45:02.492+0000 INFO  Stopped.
