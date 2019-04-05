@@ -39,8 +39,10 @@ def extract_ppt (path,file_name):
                 shape_contents.append(paragraph_contents)
             page.append(shape_contents)
         chapter.append(page)
+#    chapter[1][1].remove(['数据库系统概念----引言', 0, '页脚占位符 5', 6477000])
+#    print(chapter[1][1])
 
-    '''The structure of the chapter is the chapter[page_num][shape_num][paragraph_num], for example, 
-    chapter[1][1][0] returns ['数据库系统概念----引言', 0, '页脚占位符 5']'''
-    print(chapter)
+    '''The structure of the chapter is the chapter[page_num][shape_num][paragraph_num][shape_height], for example, 
+    chapter[1][1][0] returns ['数据库系统概念----引言', 0, '页脚占位符 5', 6477000]'''
+    #print(chapter)
     return chapter
