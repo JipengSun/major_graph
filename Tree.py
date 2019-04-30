@@ -1,5 +1,6 @@
 import re
-
+import jieba
+import math
 
 class SlideTree:
 
@@ -52,19 +53,121 @@ class SlideTree:
                     if a is not None:
                         begin = True
                 else:
-
-                    node = SlideNode(parentnode = self.root,nodename=para[0].strip())
-                    self.root.add_child(node)
+                    self.root.add_content(para)
                     success = True
 
         begin = False
+        #print(self.root.get_contents())
         return success
 
     def build_nodes(self, current_node, slide):
+        threshold = 0.9
+        result = []
+        possible_node = current_node
         for shape in slide:
-            for para in shape:
-                
-        pass
+            if slide.index(shape) == 0:
+                nodename = SlideTree.get_node_name(shape)
+                match = SlideTree.parent_match(possible_node,nodename)
+                result.append([match, possible_node])
+                while match < threshold and possible_node.parent is not None:
+                    possible_node = possible_node.parent
+                    match = SlideTree.parent_match(possible_node,nodename)
+                    result.append([match, possible_node])
+                if match >= threshold:
+                    if len(possible_node.get_children()) != 0:
+
+                        l = []
+                        for child in possible_node.get_children():
+                            print('Child: ',child.get_name())
+                            s = SlideTree.cal_similarity(child.get_name(),nodename)
+                            t = [child,s]
+                            l.append(t)
+                        l.sort(key=lambda x: x[1], reverse=True)
+                        new_node = l[0][0]
+                    else:
+                        new_node = SlideNode(parentnode= possible_node, nodename= nodename)
+                        possible_node.add_child(new_node)
+                    #print(new_node.get_contents())
+                    continue
+                    #current_node = new_node
+                elif possible_node.parent is None:
+                    match = SlideTree.parent_match(possible_node, nodename)
+                    result.append([match, possible_node])
+
+                result.sort(key=lambda x:x[0], reverse=True)
+                new_node = SlideNode(parentnode=result[0][1],nodename = nodename, contentlist=[])
+                result[0][1].add_child(new_node)
+                #current_node = new_node
+                #print(new_node.get_contents())
+            else:
+                for para in shape:
+                    new_node.add_content(para)
+                    #print(para)
+                    #print(new_node.get_contents())
+        #print(new_node.get_name())
+        #print(new_node.get_contents())
+        return new_node
+
+    @staticmethod
+    def get_node_name(shape):
+        raw_name = shape[0][0]
+        return raw_name
+
+    @staticmethod
+    def parent_match(node, title):
+        if not node.get_contents():
+            return 0
+        else:
+            all = []
+            #print(node.get_contents())
+            for para in node.get_contents():
+                if para[1] == 0:
+                    s = SlideTree.cal_similarity(para[0], title)
+                    l = [para, s]
+                    all.append(l)
+            all.sort(key=lambda x:x[1], reverse= True)
+            #print(title)
+            #print(all)
+            return all[0][1]
+
+    @staticmethod
+    def cal_similarity(content, title):
+        content = str(content)
+        title = str(title)
+        if title in content or content in title:
+            return 1
+        elif content == '':
+            return 0
+        else:
+            c_cut = [i for i in jieba.cut(content) if i != '']
+            t_cut = [i for i in jieba.cut(title) if i != '']
+            word_set = set(c_cut).union(set(t_cut))
+            word_dict = dict()
+            i = 0
+            for word in word_set:
+                word_dict[word] = i
+                i += 1
+            #c_cut_code = [word_dict[word] for word in c_cut]
+            c_cut_code = [0]*len(word_dict)
+            for word in c_cut:
+                c_cut_code[word_dict[word]] += 1
+
+            t_cut_code = [0]*len(word_dict)
+            for word in t_cut:
+                t_cut_code[word_dict[word]] += 1
+            sum = 0
+            sq1 = 0
+            sq2 = 0
+            for i in range(0,len(c_cut_code)):
+                sum += c_cut_code[i] * t_cut_code[i]
+                sq1 += pow(c_cut_code[i],2)
+                sq2 += pow(t_cut_code[i],2)
+            try:
+                result = round(float(sum)/(math.sqrt(sq1)*math.sqrt(sq2)), 2)
+            except ZeroDivisionError:
+                result = 0.0
+            return result
+
 
 
 '''
@@ -79,10 +182,10 @@ class SlideTree:
 
 class SlideNode:
 
-    def __init__(self,parentnode=None, childrenlist = [], contents=None, nodename = None):
+    def __init__(self,parentnode=None, childrenlist = [], contentlist=[], nodename = None):
         self.parent = parentnode
         self.children = childrenlist
-        self.contents = contents
+        self.contents = contentlist
         self.name = nodename
 
     def set_parent(self, parent):
@@ -97,8 +200,8 @@ class SlideNode:
     def get_children(self):
         return self.children
 
-    def set_contents(self, content):
-        self.contents = content
+    def add_content(self, content):
+        self.contents.append(content)
 
     def get_contents(self):
         return self.contents

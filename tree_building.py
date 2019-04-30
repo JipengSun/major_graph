@@ -12,14 +12,21 @@ contents = False
 for i in range(0,len(chapter.keys())):
     if not title:
         title = tree.build_title(chapter[str(i)])
-        print(i)
-    if not contents:
+        current_node = tree.root
+        #print(i)
+    elif not contents:
         contents = tree.build_content(chapter[str(i)])
-        print(i)
+        #print(i)
+    else:
+        #print(current_node.get_contents())
+        new_node = tree.build_nodes(current_node,chapter[str(i)])
+        print(new_node.get_name())
+        #print(new_node.get_contents())
+        print(new_node.get_parent().get_name())
+        current_node = new_node
 
 
 list = tree.get_root().get_children()
-for child in list:
-    print(child.get_name())
+print(list)
 
 
