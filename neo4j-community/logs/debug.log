@@ -2793,3 +2793,5 @@ MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
 2019-05-02 18:33:08.962+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=844, gcTime=0, gcCount=0}
 2019-05-03 01:06:27.999+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=7404, gcTime=0, gcCount=0}
 2019-05-03 01:06:28.503+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1307, gcTime=0, gcCount=0}
+2019-05-03 01:12:42.120+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=118, gcTime=0, gcCount=0}
+2019-05-03 01:12:42.228+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=260, gcTime=0, gcCount=0}
