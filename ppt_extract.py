@@ -1,6 +1,17 @@
 from pptx import Presentation
 from pptx.enum.shapes import MSO_SHAPE_TYPE
 
+
+def get_height(lofl):
+    return lofl[0][3]
+
+def get_text(slide):
+    txt = ''
+    for shape in slide:
+        for para in shape:
+            txt = txt+para[0]
+    return txt
+
 def extract_ppt (path,file_name):
 
     prs = Presentation(path+file_name)
@@ -53,15 +64,23 @@ def extract_ppt (path,file_name):
                             shape.remove(paragraph)
                             # print(paragraph)
 
-    for slide in chapter.values():
-        while [] in slide:
-            slide.remove([])
+    previous = get_text(chapter['0'])
 
-    def get_height(lofl):
-        return lofl[0][3]
+    for i in range(0,len(chapter.keys())):
+        #print(chapter[str(i)])
+        if i != 0:
+            current = get_text(chapter[str(i)])
+            if previous == current:
+                chapter[str(i)] = []
+            else:
+                previous = current
+        while [] in chapter[str(i)]:
+            chapter[str(i)].remove([])
+        if not chapter[str(i)]:
+            chapter[str(i)].sort(key=get_height)
 
-    for slide in chapter.values():
-        slide.sort(key=get_height)
+#    for slide in chapter.values():
+#        slide.sort(key=get_height)
 
     #print(chapter)
 

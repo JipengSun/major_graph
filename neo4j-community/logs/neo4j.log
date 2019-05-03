@@ -8,3 +8,20 @@
 2019-03-28 12:45:01.572+0000 INFO  Neo4j Server shutdown initiated by request
 2019-03-28 12:45:02.305+0000 INFO  Stopping...
 2019-03-28 12:45:02.492+0000 INFO  Stopped.
+2019-05-02 06:50:42.327+0000 INFO  ======== Neo4j 3.5.3 ========
+2019-05-02 06:50:42.356+0000 INFO  Starting...
+2019-05-02 06:50:46.885+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2019-05-02 06:50:50.472+0000 INFO  Started.
+2019-05-02 06:50:52.789+0000 INFO  Remote interface available at http://localhost:7474/
+2019-05-02 06:51:02.602+0000 WARN  The client is unauthorized due to authentication failure.
+2019-05-02 06:51:43.512+0000 WARN  The client is unauthorized due to authentication failure.
+2019-05-02 06:54:34.255+0000 WARN  The client is unauthorized due to authentication failure.
+2019-05-02 13:00:11.739+0000 INFO  Neo4j Server shutdown initiated by request
+2019-05-02 13:00:12.090+0000 INFO  Stopping...
+2019-05-02 13:00:12.939+0000 INFO  Stopped.
+2019-05-02 13:01:44.937+0000 INFO  ======== Neo4j 3.5.3 ========
+2019-05-02 13:01:44.966+0000 INFO  Starting...
+2019-05-02 13:01:49.917+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2019-05-02 13:01:54.163+0000 INFO  Started.
+2019-05-02 13:01:56.378+0000 INFO  Remote interface available at http://localhost:7474/
+2019-05-02 13:22:51.548+0000 WARN  The client is unauthorized due to authentication failure.

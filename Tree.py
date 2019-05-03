@@ -1,6 +1,7 @@
 import re
 import jieba
 import math
+from py2neo import Graph, Node, Relationship
 
 class SlideTree:
 
@@ -64,39 +65,50 @@ class SlideTree:
         threshold = 0.9
         result = []
         possible_node = current_node
+        new_node = SlideNode()
         for shape in slide:
             if slide.index(shape) == 0:
                 nodename = SlideTree.get_node_name(shape)
+                #查看此页跟哪个已有节点的页内内容match
                 match = SlideTree.parent_match(possible_node,nodename)
                 result.append([match, possible_node])
                 while match < threshold and possible_node.parent is not None:
                     possible_node = possible_node.parent
                     match = SlideTree.parent_match(possible_node,nodename)
                     result.append([match, possible_node])
+                #如果出现一个跟某个页内内容非常匹配的，查找是否跟已有子节点相同，相同则从该子节点添加，不相同则新建子节点
                 if match >= threshold:
+                    #print(match)
+                    #print('dad: ',possible_node.get_name())
+                    #print('nodename: ',nodename)
                     if len(possible_node.get_children()) != 0:
-
                         l = []
                         for child in possible_node.get_children():
-                            print('Child: ',child.get_name())
+                            #print('Child: ',child.get_name())
                             s = SlideTree.cal_similarity(child.get_name(),nodename)
                             t = [child,s]
                             l.append(t)
                         l.sort(key=lambda x: x[1], reverse=True)
-                        new_node = l[0][0]
+                        if l[0][1] > threshold:
+                            new_node = l[0][0]
+                            #new_node = SlideNode(parentnode=possible_node, nodename=nodename)
+                        else:
+                            new_node = SlideNode(parentnode= possible_node, nodename= nodename)
+                            possible_node.add_child(new_node)
+                    #如果没有子节点，添加
                     else:
                         new_node = SlideNode(parentnode= possible_node, nodename= nodename)
                         possible_node.add_child(new_node)
                     #print(new_node.get_contents())
-                    continue
                     #current_node = new_node
+                #如果回溯到根节点，找一个跟该节点内容最相似的节点加入（待定）
                 elif possible_node.parent is None:
                     match = SlideTree.parent_match(possible_node, nodename)
                     result.append([match, possible_node])
 
-                result.sort(key=lambda x:x[0], reverse=True)
-                new_node = SlideNode(parentnode=result[0][1],nodename = nodename, contentlist=[])
-                result[0][1].add_child(new_node)
+                    result.sort(key=lambda x:x[0], reverse=True)
+                    new_node = SlideNode(parentnode=result[0][1],nodename = nodename, contentlist=[])
+                    result[0][1].add_child(new_node)
                 #current_node = new_node
                 #print(new_node.get_contents())
             else:
