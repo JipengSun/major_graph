@@ -3256,3 +3256,48 @@ MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
 2019-05-04 02:38:54.612+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 61227 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
 2019-05-04 02:38:54.623+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 61227 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
 2019-05-04 02:47:22.771+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=414, gcTime=442, gcCount=1}
+2019-05-04 02:52:22.887+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 843 checkpoint started...
+2019-05-04 02:52:22.913+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 843 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b].
+2019-05-04 02:52:22.937+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 843 checkpoint completed in 46ms
+2019-05-04 02:52:22.938+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-04 03:39:03.410+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=107, gcTime=144, gcCount=1}
+2019-05-04 03:40:48.031+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=108, gcTime=0, gcCount=0}
+2019-05-04 05:34:30.060+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=120, gcTime=195, gcCount=1}
+2019-05-04 06:20:53.417+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=173, gcTime=0, gcCount=0}
+2019-05-04 06:20:53.536+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=356, gcTime=0, gcCount=0}
+2019-05-04 06:22:25.803+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=476, gcTime=0, gcCount=0}
+2019-05-04 06:55:08.501+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=165, gcTime=0, gcCount=0}
+2019-05-04 06:55:08.643+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=181, gcTime=0, gcCount=0}
+2019-05-04 06:55:14.232+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=206, gcTime=0, gcCount=0}
+2019-05-04 06:55:14.378+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=118, gcTime=0, gcCount=0}
+2019-05-04 06:56:09.121+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=156, gcTime=0, gcCount=0}
+2019-05-04 07:01:57.449+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=176, gcTime=0, gcCount=0}
+2019-05-04 07:17:57.870+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=155, gcTime=0, gcCount=0}
+2019-05-04 07:17:58.020+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=752, gcTime=0, gcCount=0}
+2019-05-04 07:33:05.082+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=438, gcTime=0, gcCount=0}
+2019-05-04 09:33:49.253+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=2376, gcTime=0, gcCount=0}
+2019-05-04 09:33:49.639+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=2810, gcTime=0, gcCount=0}
+2019-05-04 09:35:39.949+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=106, gcTime=0, gcCount=0}
+2019-05-04 09:35:40.101+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=589, gcTime=0, gcCount=0}
+2019-05-04 09:49:32.501+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=204, gcTime=222, gcCount=1}
+2019-05-04 10:49:06.290+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=126, gcTime=0, gcCount=0}
+2019-05-04 10:49:06.443+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=399, gcTime=0, gcCount=0}
+2019-05-04 11:12:31.785+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=105, gcTime=0, gcCount=0}
+2019-05-04 11:12:31.927+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=134, gcTime=0, gcCount=0}
+2019-05-04 11:20:30.256+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=130, gcTime=149, gcCount=1}
+2019-05-04 11:20:33.615+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=125, gcTime=0, gcCount=0}
+2019-05-04 12:13:50.823+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=164, gcTime=0, gcCount=0}
+2019-05-04 12:13:51.491+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=4365, gcTime=0, gcCount=0}
+2019-05-04 12:13:54.265+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1394, gcTime=0, gcCount=0}
+2019-05-04 12:13:56.145+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=3125, gcTime=0, gcCount=0}
+2019-05-04 12:13:56.310+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=381, gcTime=0, gcCount=0}
+2019-05-04 12:21:09.392+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=446, gcTime=0, gcCount=0}
+2019-05-04 12:21:11.661+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Shutdown started
+2019-05-04 12:21:11.675+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is unavailable.
+2019-05-04 12:21:11.891+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Shutting down 'graph.db' database.
+2019-05-04 12:21:11.892+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Shutdown started
+2019-05-04 12:21:12.446+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by database shutdown @ txId: 843 checkpoint started...
+2019-05-04 12:21:12.906+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by database shutdown @ txId: 843 checkpoint completed in 459ms
+2019-05-04 12:21:12.908+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-04 12:21:13.942+0000 INFO [o.n.i.d.DiagnosticsManager] --- STOPPING diagnostics START ---
+2019-05-04 12:21:13.958+0000 INFO [o.n.i.d.DiagnosticsManager] --- STOPPING diagnostics END ---

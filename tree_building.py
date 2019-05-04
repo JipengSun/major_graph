@@ -23,6 +23,9 @@ with open('/Users/mac/major_graph/neo4j-community/import/test.csv', 'w', newline
         elif not contents:
             contents = tree.build_content(chapter[str(i)])
             #print(i)
+            if contents:
+                seg = tree.corpus(i+1,chapter)
+                print(seg)
         elif chapter[str(i)]:
             #print(current_node.get_contents())
             new_node = tree.build_nodes(current_node,chapter[str(i)])

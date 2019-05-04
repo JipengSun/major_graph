@@ -41,6 +41,8 @@ def extract_ppt (path,file_name):
             page.append(shape_contents)
         chapter[str(prs.slides.index(slide))] = page
 
+    print(chapter['94'])
+
 
     '''The structure of the chapter is the chapter[page_num][shape_num][paragraph_num], for example, 
     chapter[1][1][0] returns ['数据库系统概念----引言', 0, '页脚占位符 5', 6477000]'''
@@ -65,6 +67,7 @@ def extract_ppt (path,file_name):
                             # print(paragraph)
 
     previous = get_text(chapter['0'])
+
 
     for i in range(0,len(chapter.keys())):
         #print(chapter[str(i)])

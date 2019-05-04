@@ -53,7 +53,7 @@ class SlideTree:
                     a = re.match(r'.*目录|.*内容',para[0])
                     if a is not None:
                         begin = True
-                else:
+                elif para[1] == 0:
                     self.root.add_content(para)
                     success = True
 
@@ -197,6 +197,22 @@ class SlideTree:
             except ZeroDivisionError:
                 result = 0.0
             return result
+
+
+    def corpus(self,begin_i,chapter):
+        segments = []
+        base = []
+        for content in self.get_root().get_contents():
+            segments.append([content[0],0,0])
+            print(content)
+            for i in range(begin_i,len(chapter.keys())):
+                if chapter[str(i)] and (content[0] == SlideTree.get_node_name(chapter[str(i)][0])):
+                    segments[-1][1] = 1
+                    segments[-1][2] = i
+                    break
+        if segments[0][1] == 0:
+            segments[0][2] = begin_i
+        return segments
 
 
 
