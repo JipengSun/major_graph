@@ -2795,3 +2795,464 @@ MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
 2019-05-03 01:06:28.503+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1307, gcTime=0, gcCount=0}
 2019-05-03 01:12:42.120+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=118, gcTime=0, gcCount=0}
 2019-05-03 01:12:42.228+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=260, gcTime=0, gcCount=0}
+2019-05-03 01:57:34.071+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=102, gcTime=108, gcCount=1}
+2019-05-03 02:00:17.679+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=102, gcTime=0, gcCount=0}
+2019-05-03 03:15:58.535+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 803 checkpoint started...
+2019-05-03 03:15:58.589+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 803 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b].
+2019-05-03 03:15:58.625+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 803 checkpoint completed in 83ms
+2019-05-03 03:15:58.625+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-03 03:16:08.958+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 45016 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-03 03:16:08.982+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 45016 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-03 03:16:09.359+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=126, gcTime=137, gcCount=1}
+2019-05-03 03:16:22.754+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=107, gcTime=185, gcCount=1}
+2019-05-03 03:16:25.194+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1709, gcTime=0, gcCount=0}
+2019-05-03 03:17:52.133+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=163, gcTime=0, gcCount=0}
+2019-05-03 03:18:20.111+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 4200 seconds: MATCH (n:KP) RETURN n LIMIT 25
+2019-05-03 03:18:20.116+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 4200 seconds: MATCH (n:KP) RETURN n LIMIT 25
+2019-05-03 03:18:21.754+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 45186 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-05-03 03:18:21.756+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 45186 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-05-03 03:30:58.916+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 824 checkpoint started...
+2019-05-03 03:30:58.924+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 824 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a].
+2019-05-03 03:30:58.938+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 824 checkpoint completed in 21ms
+2019-05-03 03:30:58.938+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-03 03:43:41.571+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 1652 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-03 03:43:41.578+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 1652 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-03 03:45:59.212+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 826 checkpoint started...
+2019-05-03 03:45:59.236+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 826 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b].
+2019-05-03 03:45:59.246+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 826 checkpoint completed in 24ms
+2019-05-03 03:45:59.247+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-03 03:48:58.658+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=204, gcTime=0, gcCount=0}
+2019-05-03 03:48:58.787+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=5628, gcTime=0, gcCount=0}
+2019-05-03 03:55:20.041+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=101, gcTime=98, gcCount=1}
+2019-05-03 06:14:16.689+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=308, gcTime=0, gcCount=0}
+2019-05-03 06:14:20.141+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=4026, gcTime=0, gcCount=0}
+2019-05-03 06:14:22.063+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=2031, gcTime=0, gcCount=0}
+2019-05-03 06:14:23.766+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=2511, gcTime=0, gcCount=0}
+2019-05-03 06:14:24.054+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=810, gcTime=0, gcCount=0}
+2019-05-03 06:19:43.409+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=121, gcTime=0, gcCount=0}
+2019-05-03 06:19:43.537+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=129, gcTime=0, gcCount=0}
+2019-05-03 06:59:36.069+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=130, gcTime=0, gcCount=0}
+2019-05-03 06:59:36.510+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=3527, gcTime=0, gcCount=0}
+2019-05-03 07:02:43.945+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=174, gcTime=0, gcCount=0}
+2019-05-03 07:14:17.505+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=100, gcTime=0, gcCount=0}
+2019-05-03 07:14:17.630+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=151, gcTime=0, gcCount=0}
+2019-05-03 08:22:20.974+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=358, gcTime=0, gcCount=0}
+2019-05-03 08:22:21.172+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=414, gcTime=0, gcCount=0}
+2019-05-03 08:39:44.055+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=112, gcTime=141, gcCount=1}
+2019-05-03 08:53:56.948+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=189, gcTime=0, gcCount=0}
+2019-05-03 08:53:57.144+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=416, gcTime=0, gcCount=0}
+2019-05-03 09:12:39.994+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=102, gcTime=0, gcCount=0}
+2019-05-03 09:12:40.138+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=230, gcTime=0, gcCount=0}
+2019-05-03 09:16:31.323+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=172, gcTime=0, gcCount=0}
+2019-05-03 09:16:31.472+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=227, gcTime=0, gcCount=0}
+2019-05-03 09:36:24.070+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=125, gcTime=0, gcCount=0}
+2019-05-03 09:36:32.708+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 21174 seconds: EXPLAIN MATCH (n:Person) detach delete n
+2019-05-03 09:36:32.788+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 21174 seconds: MATCH (n:Person) detach delete n
+2019-05-03 09:36:44.431+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 21182 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-03 09:36:44.646+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 21182 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-03 09:36:45.393+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 21183 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-03 09:36:45.408+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 21183 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-03 09:36:49.701+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 827 checkpoint started...
+2019-05-03 09:36:49.791+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 827 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a].
+2019-05-03 09:36:49.829+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 827 checkpoint completed in 126ms
+2019-05-03 09:36:49.837+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-03 09:37:35.341+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 21 seconds: LOAD CSV FROM 'file:///test.csv' AS line
+MERGE(n:Test{name:line[1]})
+2019-05-03 09:38:17.175+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=189, gcTime=251, gcCount=1}
+2019-05-03 09:38:23.893+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 67989 seconds: MATCH (n:Test) RETURN n LIMIT 25
+2019-05-03 09:38:23.905+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 67989 seconds: MATCH (n:Test) RETURN n LIMIT 25
+2019-05-03 09:38:26.622+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 22804 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-05-03 09:38:26.654+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 22804 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-05-03 09:47:28.915+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=120, gcTime=0, gcCount=0}
+2019-05-03 09:47:29.201+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1837, gcTime=0, gcCount=0}
+2019-05-03 09:47:34.602+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=114, gcTime=0, gcCount=0}
+2019-05-03 09:47:38.562+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=2969, gcTime=0, gcCount=0}
+2019-05-03 09:47:38.823+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=3701, gcTime=0, gcCount=0}
+2019-05-03 09:47:39.610+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=241, gcTime=0, gcCount=0}
+2019-05-03 09:47:40.275+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=641, gcTime=0, gcCount=0}
+2019-05-03 09:51:50.392+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 831 checkpoint started...
+2019-05-03 09:51:50.487+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 831 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b].
+2019-05-03 09:51:50.550+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 831 checkpoint completed in 153ms
+2019-05-03 09:51:50.550+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-03 13:09:08.973+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=129, gcTime=0, gcCount=0}
+2019-05-03 13:09:09.156+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=124, gcTime=0, gcCount=0}
+2019-05-03 13:25:31.023+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=129, gcTime=207, gcCount=1}
+2019-05-03 13:33:28.637+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=128, gcTime=0, gcCount=0}
+2019-05-03 13:33:28.757+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=195, gcTime=0, gcCount=0}
+2019-05-03 13:35:11.565+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=259, gcTime=0, gcCount=0}
+2019-05-03 13:39:17.996+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 832 checkpoint started...
+2019-05-03 13:39:18.055+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 832 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a].
+2019-05-03 13:39:18.113+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 832 checkpoint completed in 110ms
+2019-05-03 13:39:18.114+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-03 13:39:34.951+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 14519 seconds: LOAD CSV FROM 'file:///test.csv' AS line
+MERGE(n:Test{name:line[1]})
+2019-05-03 13:39:34.986+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 14519 seconds: LOAD CSV FROM 'file:///test.csv' AS line
+MERGE(n:Test{name:line[1]})
+2019-05-03 13:39:47.161+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 14498 seconds: LOAD CSV FROM 'file:///test.csv' AS line
+match (from:Test{name:line[0]}),(to:Test{name:line[1]})
+MERGE (from)-[r:包含]-(to)
+2019-05-03 13:39:47.175+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 14498 seconds: LOAD CSV FROM 'file:///test.csv' AS line
+match (from:Test{name:line[0]}),(to:Test{name:line[1]})
+MERGE (from)-[r:包含]-(to)
+2019-05-03 13:39:48.085+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 14581 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-03 13:39:48.107+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 14581 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-03 13:40:00.597+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 42368 seconds: EXPLAIN MATCH (n:Test) RETURN n
+2019-05-03 13:40:00.615+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 42368 seconds: MATCH (n:Test) RETURN n
+2019-05-03 13:54:18.527+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 835 checkpoint started...
+2019-05-03 13:54:18.566+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 835 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b].
+2019-05-03 13:54:18.587+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 835 checkpoint completed in 55ms
+2019-05-03 13:54:18.588+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-03 14:21:37.171+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=213, gcTime=243, gcCount=1}
+2019-05-03 14:38:14.476+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 3506 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-03 14:38:14.589+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 3506 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-03 14:38:19.490+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 836 checkpoint started...
+2019-05-03 14:38:19.504+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 836 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a].
+2019-05-03 14:38:19.514+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 836 checkpoint completed in 23ms
+2019-05-03 14:38:19.516+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-03 14:46:18.190+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=172, gcTime=0, gcCount=0}
+2019-05-03 14:46:18.326+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=805, gcTime=0, gcCount=0}
+2019-05-03 18:14:44.887+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1591, gcTime=0, gcCount=0}
+2019-05-03 18:14:45.147+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1004, gcTime=0, gcCount=0}
+2019-05-03 18:14:51.812+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 839 checkpoint started...
+2019-05-03 18:14:52.415+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 839 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b].
+2019-05-03 18:14:52.592+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 839 checkpoint completed in 755ms
+2019-05-03 18:14:52.594+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-03 18:15:20.695+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=253, gcTime=0, gcCount=0}
+2019-05-03 18:15:21.774+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1857, gcTime=0, gcCount=0}
+2019-05-03 18:15:26.219+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1544, gcTime=0, gcCount=0}
+2019-05-03 18:15:26.891+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=3901, gcTime=0, gcCount=0}
+2019-05-03 18:15:27.313+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=459, gcTime=0, gcCount=0}
+2019-05-03 18:15:28.890+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1015, gcTime=0, gcCount=0}
+2019-05-03 18:15:29.171+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=649, gcTime=0, gcCount=0}
+2019-05-03 18:15:29.333+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=146, gcTime=0, gcCount=0}
+2019-05-03 18:15:54.635+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=150, gcTime=0, gcCount=0}
+2019-05-03 18:15:55.814+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=6625, gcTime=0, gcCount=0}
+2019-05-03 18:18:41.141+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=122, gcTime=140, gcCount=1}
+2019-05-03 22:15:04.806+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1617, gcTime=0, gcCount=0}
+2019-05-03 22:15:04.945+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=817, gcTime=0, gcCount=0}
+2019-05-04 02:17:32.041+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=12470, gcTime=0, gcCount=0}
+2019-05-04 02:17:32.327+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=388, gcTime=0, gcCount=0}
+2019-05-04 02:17:32.858+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=431, gcTime=0, gcCount=0}
+2019-05-04 02:17:46.680+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=602, gcTime=0, gcCount=0}
+2019-05-04 02:17:46.855+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=517, gcTime=0, gcCount=0}
+2019-05-04 02:17:47.130+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=174, gcTime=0, gcCount=0}
+2019-05-04 02:30:36.357+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=463, gcTime=0, gcCount=0}
+2019-05-04 02:30:36.952+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1683, gcTime=0, gcCount=0}
+2019-05-04 02:30:51.318+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=119, gcTime=0, gcCount=0}
+2019-05-04 02:30:51.769+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=4362, gcTime=0, gcCount=0}
+2019-05-04 02:30:52.374+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=126, gcTime=0, gcCount=0}
+2019-05-04 02:30:53.139+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1135, gcTime=0, gcCount=0}
+2019-05-04 02:36:24.123+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=101, gcTime=0, gcCount=0}
+2019-05-04 02:37:09.995+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 61232 seconds: EXPLAIN MATCH (n:Test) detach delete n
+2019-05-04 02:37:10.071+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 61233 seconds: MATCH (n:Test) detach delete n
+2019-05-04 02:37:22.304+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 840 checkpoint started...
+2019-05-04 02:37:22.429+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 840 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a].
+2019-05-04 02:37:22.503+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 840 checkpoint completed in 186ms
+2019-05-04 02:37:22.504+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-04 02:38:14.515+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 46718 seconds: LOAD CSV FROM 'file:///test.csv' AS line
+MERGE(n:Test{name:line[1]})
+2019-05-04 02:38:14.525+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 46718 seconds: LOAD CSV FROM 'file:///test.csv' AS line
+MERGE(n:Test{name:line[1]})
+2019-05-04 02:38:42.721+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 43227 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-04 02:38:42.747+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 43227 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-04 02:38:42.905+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 43228 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-04 02:38:42.915+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 43228 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-04 02:38:54.612+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 61227 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-05-04 02:38:54.623+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 61227 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-05-04 02:47:22.771+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=414, gcTime=442, gcCount=1}

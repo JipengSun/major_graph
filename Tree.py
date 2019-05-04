@@ -62,7 +62,7 @@ class SlideTree:
         return success
 
     def build_nodes(self, current_node, slide):
-        threshold = 0.9
+        threshold = 0.8
         result = []
         possible_node = current_node
         new_node = SlideNode()
@@ -72,12 +72,14 @@ class SlideTree:
                 #查看此页跟哪个已有节点的页内内容match
                 match = SlideTree.parent_match(possible_node,nodename)
                 result.append([match, possible_node])
-                while match < threshold and possible_node.parent is not None:
+                while nodename!= possible_node.get_name() and match < threshold and possible_node.parent is not None:
                     possible_node = possible_node.parent
                     match = SlideTree.parent_match(possible_node,nodename)
                     result.append([match, possible_node])
-                #如果出现一个跟某个页内内容非常匹配的，查找是否跟已有子节点相同，相同则从该子节点添加，不相同则新建子节点
-                if match >= threshold:
+                if nodename == possible_node.get_name():
+                    new_node = possible_node
+                # 如果出现一个跟某个页内内容非常匹配的，查找是否跟已有子节点相同，相同则从该子节点添加，不相同则新建子节点
+                elif match >= 0.8:
                     #print(match)
                     #print('dad: ',possible_node.get_name())
                     #print('nodename: ',nodename)
@@ -103,14 +105,20 @@ class SlideTree:
                     #current_node = new_node
                 #如果回溯到根节点，找一个跟该节点内容最相似的节点加入（待定）
                 elif possible_node.parent is None:
+                    '''
+
                     match = SlideTree.parent_match(possible_node, nodename)
                     result.append([match, possible_node])
 
                     result.sort(key=lambda x:x[0], reverse=True)
                     new_node = SlideNode(parentnode=result[0][1],nodename = nodename, contentlist=[])
                     result[0][1].add_child(new_node)
+                    '''
                 #current_node = new_node
                 #print(new_node.get_contents())
+
+                    new_node = SlideNode(parentnode=current_node.get_parent(), nodename=nodename, contentlist=[])
+
             else:
                 for para in shape:
                     new_node.add_content(para)
@@ -122,8 +130,14 @@ class SlideTree:
 
     @staticmethod
     def get_node_name(shape):
+        skip_word = ['举例','例子','示例']
         raw_name = shape[0][0]
-        return raw_name
+        b = re.sub(r'（.*）|\(.*\)','',raw_name)
+        for word in skip_word:
+            if word in b:
+                b = b.replace(word,'')
+        print(b)
+        return b
 
     @staticmethod
     def parent_match(node, title):
@@ -133,20 +147,24 @@ class SlideTree:
             all = []
             #print(node.get_contents())
             for para in node.get_contents():
-                if para[1] == 0:
+                if para[1] == 0 & len(para[0])<=15:
                     s = SlideTree.cal_similarity(para[0], title)
                     l = [para, s]
                     all.append(l)
-            all.sort(key=lambda x:x[1], reverse= True)
+            if all:
+                all.sort(key=lambda x:x[1], reverse= True)
+                return all[0][1]
+            else:
+                return 0
             #print(title)
             #print(all)
-            return all[0][1]
-
     @staticmethod
     def cal_similarity(content, title):
         content = str(content)
         title = str(title)
-        if title in content or content in title:
+        c1 = jieba.cut(content)
+        t1 = jieba.cut(title)
+        if title in content or set(t1).issubset(set(c1)):
             return 1
         elif content == '':
             return 0

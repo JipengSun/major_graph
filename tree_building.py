@@ -12,39 +12,40 @@ graph = Graph('http://localhost:7474',username = 'neo4j', password='lukasbill')
 tree = Tree.SlideTree()
 title = False
 contents = False
-for i in range(0,len(chapter.keys())):
-    if not title:
-        title = tree.build_title(chapter[str(i)])
-        current_node = tree.root
-        #print(i)
-    elif not contents:
-        contents = tree.build_content(chapter[str(i)])
-        #print(i)
-    elif chapter[str(i)]:
-        #print(current_node.get_contents())
-        new_node = tree.build_nodes(current_node,chapter[str(i)])
-        print('current node is',new_node.get_name())
-        #print(new_node.get_contents())
-        print('parent is ',new_node.get_parent().get_name())
-        data = [new_node.get_name(),new_node.get_parent().get_name()]
-        with open('/Users/mac/major_graph/neo4j-community/import/test.csv','a',newline='') as f:
+with open('/Users/mac/major_graph/neo4j-community/import/test.csv', 'w', newline='') as f:
+    for i in range(0,len(chapter.keys())):
+    #for i in range(0, 7):
+
+        if not title:
+            title = tree.build_title(chapter[str(i)])
+            current_node = tree.root
+            #print(i)
+        elif not contents:
+            contents = tree.build_content(chapter[str(i)])
+            #print(i)
+        elif chapter[str(i)]:
+            #print(current_node.get_contents())
+            new_node = tree.build_nodes(current_node,chapter[str(i)])
+            print('before node is ',current_node.get_name())
+            print('current node is',new_node.get_name())
+            #print(new_node.get_contents())
+            print('parent is ',new_node.get_parent().get_name())
+
+            data = [new_node.get_parent().get_name(),new_node.get_name()]
             writer = csv.writer(f)
             writer.writerow(data)
-        f.close()
-
-        '''
-        parentnode = Node(label='Test',name = str(new_node.get_parent().get_name()).replace('_',''))
-        childnode = Node(label='Test', name= str(new_node.get_name()).replace('_',''))
-        INCLUDE = Relationship.type('contains')
-        graph.merge(INCLUDE(parentnode,childnode),'Test','name')
-        '''
-        '''
-        MATCH (n { label: 'Test' })
-        DETACH DELETE n
-        '''
-        current_node = new_node
-
-
+            '''
+            parentnode = Node(label='Test',name = str(new_node.get_parent().get_name()).replace('_',''))
+            childnode = Node(label='Test', name= str(new_node.get_name()).replace('_',''))
+            INCLUDE = Relationship.type('contains')
+            graph.merge(INCLUDE(parentnode,childnode),'Test','name')
+            '''
+            '''
+            MATCH (n { label: 'Test' })
+            DETACH DELETE n
+            '''
+            current_node = new_node
+f.close()
 list = tree.get_root().get_children()
 for child in list:
     print(child.get_name())
