@@ -12,31 +12,36 @@ graph = Graph('http://localhost:7474',username = 'neo4j', password='lukasbill')
 tree = Tree.SlideTree()
 title = False
 contents = False
-with open('/Users/mac/major_graph/neo4j-community/import/test.csv', 'w', newline='') as f:
+with open('/Users/mac/major_graph/neo4j-community/import/test.csv', 'w', newline='',encoding='utf-8') as f:
     for i in range(0,len(chapter.keys())):
     #for i in range(0, 7):
 
         if not title:
             title = tree.build_title(chapter[str(i)])
             current_node = tree.root
+            exact_node = tree.root
             #print(i)
         elif not contents:
             contents = tree.build_content(chapter[str(i)])
             #print(i)
+            '''
             if contents:
                 seg = tree.corpus(i+1,chapter)
                 print(seg)
+            '''
         elif chapter[str(i)]:
             #print(current_node.get_contents())
-            new_node = tree.build_nodes(current_node,chapter[str(i)])
+            new_node,exact_node = tree.build_nodes(current_node,exact_node,chapter[str(i)])
             print('before node is ',current_node.get_name())
             print('current node is',new_node.get_name())
             #print(new_node.get_contents())
             print('parent is ',new_node.get_parent().get_name())
 
+
             data = [new_node.get_parent().get_name(),new_node.get_name()]
             writer = csv.writer(f)
             writer.writerow(data)
+
             '''
             parentnode = Node(label='Test',name = str(new_node.get_parent().get_name()).replace('_',''))
             childnode = Node(label='Test', name= str(new_node.get_name()).replace('_',''))

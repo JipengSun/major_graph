@@ -28,3 +28,23 @@
 2019-05-04 12:21:07.792+0000 INFO  Neo4j Server shutdown initiated by request
 2019-05-04 12:21:11.651+0000 INFO  Stopping...
 2019-05-04 12:21:14.624+0000 INFO  Stopped.
+2019-05-12 15:41:22.109+0000 INFO  ======== Neo4j 3.5.3 ========
+2019-05-12 15:41:22.136+0000 INFO  Starting...
+2019-05-12 15:41:26.736+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2019-05-12 15:41:32.069+0000 INFO  Started.
+2019-05-12 15:41:34.591+0000 INFO  Remote interface available at http://localhost:7474/
+2019-05-12 15:41:47.144+0000 WARN  The client is unauthorized due to authentication failure.
+2019-05-13 13:42:16.189+0000 INFO  Neo4j Server shutdown initiated by request
+2019-05-13 13:42:16.552+0000 INFO  Stopping...
+2019-05-13 13:42:16.750+0000 INFO  Stopped.
+2019-05-14 05:04:19.339+0000 INFO  ======== Neo4j 3.5.3 ========
+2019-05-14 05:04:19.366+0000 INFO  Starting...
+2019-05-14 05:04:24.236+0000 INFO  Bolt enabled on 127.0.0.1:7687.
+2019-05-14 05:04:29.022+0000 INFO  Started.
+2019-05-14 05:04:31.391+0000 INFO  Remote interface available at http://localhost:7474/
+2019-05-14 05:04:33.957+0000 WARN  The client is unauthorized due to authentication failure.
+2019-05-22 02:01:17.452+0000 WARN  The client is unauthorized due to authentication failure.
+2019-05-22 02:02:17.110+0000 ERROR Client triggered an unexpected error [Neo.DatabaseError.General.UnknownError]: java.net.URISyntaxException: Illegal character in path at index 10: file:/test copy.csv, reference 5fb444a5-00d7-4181-8ee4-df712a3116c3.
+2019-05-23 02:11:19.552+0000 INFO  Neo4j Server shutdown initiated by request
+2019-05-23 02:11:19.800+0000 INFO  Stopping...
+2019-05-23 02:11:20.121+0000 INFO  Stopped.

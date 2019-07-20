@@ -3301,3 +3301,1172 @@ MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
 2019-05-04 12:21:12.908+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
 2019-05-04 12:21:13.942+0000 INFO [o.n.i.d.DiagnosticsManager] --- STOPPING diagnostics START ---
 2019-05-04 12:21:13.958+0000 INFO [o.n.i.d.DiagnosticsManager] --- STOPPING diagnostics END ---
+2019-05-12 15:41:22.504+0000 WARN [o.n.i.p.PageCache] The dbms.memory.pagecache.size setting has not been configured. It is recommended that this setting is always explicitly configured, to ensure the system has a balanced configuration. Until then, a computed heuristic value of 1610612736 bytes will be used instead. Run `neo4j-admin memrec` for memory configuration suggestions.
+2019-05-12 15:41:23.143+0000 INFO [o.n.g.f.m.e.CommunityEditionModule] No locking implementation specified, defaulting to 'community'
+2019-05-12 15:41:23.522+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Creating 'graph.db' database.
+2019-05-12 15:41:23.618+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Requirement `Database available` makes database graph.db unavailable.
+2019-05-12 15:41:23.621+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is unavailable.
+2019-05-12 15:41:23.737+0000 INFO [o.n.i.d.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2019-05-12 15:41:23.737+0000 INFO [o.n.i.d.DiagnosticsManager] Neo4j Kernel properties:
+2019-05-12 15:41:23.738+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.http.enabled=true
+2019-05-12 15:41:23.738+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.edition=community
+2019-05-12 15:41:23.738+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.security.auth_enabled=true
+2019-05-12 15:41:23.738+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.windows_service_name=neo4j
+2019-05-12 15:41:23.739+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2019-05-12 15:41:23.739+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=/Users/mac/major_graph/neo4j-community
+2019-05-12 15:41:23.739+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.https.enabled=true
+2019-05-12 15:41:23.739+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.directories.import=import
+2019-05-12 15:41:23.739+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.jvm.additional=-XX:+UseG1GC
+2019-05-12 15:41:23.739+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.tx_log.rotation.retention_policy=1 days
+2019-05-12 15:41:23.740+0000 INFO [o.n.i.d.DiagnosticsManager] Diagnostics providers:
+2019-05-12 15:41:23.740+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2019-05-12 15:41:23.740+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.internal.diagnostics.DiagnosticsManager
+2019-05-12 15:41:23.740+0000 INFO [o.n.i.d.DiagnosticsManager] SYSTEM_MEMORY
+2019-05-12 15:41:23.740+0000 INFO [o.n.i.d.DiagnosticsManager] JAVA_MEMORY
+2019-05-12 15:41:23.740+0000 INFO [o.n.i.d.DiagnosticsManager] OPERATING_SYSTEM
+2019-05-12 15:41:23.741+0000 INFO [o.n.i.d.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2019-05-12 15:41:23.741+0000 INFO [o.n.i.d.DiagnosticsManager] CLASSPATH
+2019-05-12 15:41:23.741+0000 INFO [o.n.i.d.DiagnosticsManager] LIBRARY_PATH
+2019-05-12 15:41:23.741+0000 INFO [o.n.i.d.DiagnosticsManager] SYSTEM_PROPERTIES
+2019-05-12 15:41:23.741+0000 INFO [o.n.i.d.DiagnosticsManager] TIMEZONE_DATABASE
+2019-05-12 15:41:23.741+0000 INFO [o.n.i.d.DiagnosticsManager] NETWORK
+2019-05-12 15:41:23.741+0000 INFO [o.n.i.d.DiagnosticsManager] System memory information:
+2019-05-12 15:41:23.748+0000 INFO [o.n.i.d.DiagnosticsManager] Total Physical memory: 4.00 GB
+2019-05-12 15:41:23.750+0000 INFO [o.n.i.d.DiagnosticsManager] Free Physical memory: 24.41 MB
+2019-05-12 15:41:23.752+0000 INFO [o.n.i.d.DiagnosticsManager] Committed virtual memory: 6.53 GB
+2019-05-12 15:41:23.753+0000 INFO [o.n.i.d.DiagnosticsManager] Total swap space: 2.00 GB
+2019-05-12 15:41:23.754+0000 INFO [o.n.i.d.DiagnosticsManager] Free swap space: 784.50 MB
+2019-05-12 15:41:23.754+0000 INFO [o.n.i.d.DiagnosticsManager] JVM memory information:
+2019-05-12 15:41:23.755+0000 INFO [o.n.i.d.DiagnosticsManager] Free  memory: 41.47 MB
+2019-05-12 15:41:23.755+0000 INFO [o.n.i.d.DiagnosticsManager] Total memory: 64.00 MB
+2019-05-12 15:41:23.755+0000 INFO [o.n.i.d.DiagnosticsManager] Max   memory: 1.00 GB
+2019-05-12 15:41:23.766+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space]
+2019-05-12 15:41:23.767+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+2019-05-12 15:41:23.772+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=6.06 MB, used=6.04 MB, max=240.00 MB, threshold=0.00 B
+2019-05-12 15:41:23.772+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=21.37 MB, used=20.28 MB, max=-1.00 B, threshold=0.00 B
+2019-05-12 15:41:23.773+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=2.67 MB, used=2.41 MB, max=1.00 GB, threshold=0.00 B
+2019-05-12 15:41:23.773+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Eden Space (Heap memory): committed=29.00 MB, used=2.00 MB, max=-1.00 B, threshold=?
+2019-05-12 15:41:23.774+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Survivor Space (Heap memory): committed=5.00 MB, used=5.00 MB, max=-1.00 B, threshold=?
+2019-05-12 15:41:23.774+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Old Gen (Heap memory): committed=30.00 MB, used=14.00 MB, max=1.00 GB, threshold=0.00 B
+2019-05-12 15:41:23.775+0000 INFO [o.n.i.d.DiagnosticsManager] Operating system information:
+2019-05-12 15:41:23.779+0000 INFO [o.n.i.d.DiagnosticsManager] Operating System: Mac OS X; version: 10.14.4; arch: x86_64; cpus: 4
+2019-05-12 15:41:23.781+0000 INFO [o.n.i.d.DiagnosticsManager] Max number of file descriptors: 10240
+2019-05-12 15:41:23.783+0000 INFO [o.n.i.d.DiagnosticsManager] Number of open file descriptors: 130
+2019-05-12 15:41:23.794+0000 INFO [o.n.i.d.DiagnosticsManager] Process id: 56490@LukasdeMacBook-Air.local
+2019-05-12 15:41:23.794+0000 INFO [o.n.i.d.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2019-05-12 15:41:23.801+0000 INFO [o.n.i.d.DiagnosticsManager] Local timezone: Asia/Shanghai
+2019-05-12 15:41:23.801+0000 INFO [o.n.i.d.DiagnosticsManager] JVM information:
+2019-05-12 15:41:23.801+0000 INFO [o.n.i.d.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2019-05-12 15:41:23.801+0000 INFO [o.n.i.d.DiagnosticsManager] VM Vendor: Oracle Corporation
+2019-05-12 15:41:23.802+0000 INFO [o.n.i.d.DiagnosticsManager] VM Version: 25.60-b23
+2019-05-12 15:41:23.802+0000 INFO [o.n.i.d.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2019-05-12 15:41:23.804+0000 INFO [o.n.i.d.DiagnosticsManager] VM Arguments: [-XX:+UseG1GC, -XX:-OmitStackTraceInFastThrow, -XX:+AlwaysPreTouch, -XX:+UnlockExperimentalVMOptions, -XX:+TrustFinalNonStaticFields, -XX:+DisableExplicitGC, -Djdk.tls.ephemeralDHKeySize=2048, -Djdk.tls.rejectClientInitiatedRenegotiation=true, -Dunsupported.dbms.udc.source=tarball, -Dfile.encoding=UTF-8]
+2019-05-12 15:41:23.805+0000 INFO [o.n.i.d.DiagnosticsManager] Java classpath:
+2019-05-12 15:41:23.808+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-frontend-3.1-3.1.9.jar
+2019-05-12 15:41:23.808+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-security-9.4.11.v20180605.jar
+2019-05-12 15:41:23.808+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-lucene-upgrade-3.5.3.jar
+2019-05-12 15:41:23.808+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/bcprov-jdk15on-1.60.jar
+2019-05-12 15:41:23.808+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-http-9.4.11.v20180605.jar
+2019-05-12 15:41:23.809+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-common-3.5.3.jar
+2019-05-12 15:41:23.809+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar
+2019-05-12 15:41:23.809+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar
+2019-05-12 15:41:23.809+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-parser-3.5-3.5.3.jar
+2019-05-12 15:41:23.809+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-util-3.5-3.5.3.jar
+2019-05-12 15:41:23.809+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/commons-text-1.4.jar
+2019-05-12 15:41:23.809+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jersey-server-1.19.3.jar
+2019-05-12 15:41:23.809+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jaxb-core-2.3.0.1.jar
+2019-05-12 15:41:23.809+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/nashorn.jar
+2019-05-12 15:41:23.809+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/lib/tools.jar
+2019-05-12 15:41:23.810+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-3.5.3.jar
+2019-05-12 15:41:23.810+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/openCypher-frontend-1-3.4.12.jar
+2019-05-12 15:41:23.810+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-csv-3.5.3.jar
+2019-05-12 15:41:23.810+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-runtime-util-3.5.3.jar
+2019-05-12 15:41:23.810+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/commons-lang3-3.8.jar
+2019-05-12 15:41:23.810+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-front-end-3.5-3.5.3.jar
+2019-05-12 15:41:23.810+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/plugins/*
+2019-05-12 15:41:23.810+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes
+2019-05-12 15:41:23.810+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/eclipse-collections-api-9.2.0.jar
+2019-05-12 15:41:23.810+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-values-3.5.3.jar
+2019-05-12 15:41:23.810+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/caffeine-2.6.2.jar
+2019-05-12 15:41:23.810+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/opencsv-2.3.jar
+2019-05-12 15:41:23.810+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-security-3.5.3.jar
+2019-05-12 15:41:23.810+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-unsafe-3.5.3.jar
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-fulltext-index-3.5.3.jar
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jackson-mapper-asl-1.9.13.jar
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/conf/
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-concurrent-3.5.3.jar
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/localedata.jar
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jackson-jaxrs-1.9.13.jar
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/javax.servlet-api-3.1.0.jar
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jaxb-api-2.3.0.jar
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/commons-logging-1.1.1.jar
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/plugins/
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-spatial-index-3.5.3.jar
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-expressions-3.5-3.5.3.jar
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-frontend-2.3-2.3.12.jar
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-kernel-3.5.3.jar
+2019-05-12 15:41:23.811+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-dbms-3.5.3.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jsr311-api-1.1.2.r612.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-configuration-3.5.3.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/lucene-codecs-5.5.5.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-util-3.4-3.4.12.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-diagnostics-3.5.3.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/concurrentlinkedhashmap-lru-1.4.2.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-jmx-3.5.3.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-codegen-3.5.3.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jersey-servlet-1.19.3.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-graph-matching-3.1.9.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jProcesses-1.6.4.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-planner-spi-3.4-3.4.12.jar
+2019-05-12 15:41:23.812+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-io-9.4.11.v20180605.jar
+2019-05-12 15:41:23.813+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+2019-05-12 15:41:23.813+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/sunec.jar
+2019-05-12 15:41:23.813+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/stax-ex-1.7.8.jar
+2019-05-12 15:41:23.813+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jaxb-runtime-2.3.0.1.jar
+2019-05-12 15:41:23.813+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/netty-all-4.1.32.Final.jar
+2019-05-12 15:41:23.815+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/FastInfoset-1.2.13.jar
+2019-05-12 15:41:23.815+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-data-collector-3.5.3.jar
+2019-05-12 15:41:23.815+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-lucene-index-3.5.3.jar
+2019-05-12 15:41:23.815+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/commons-lang-2.6.jar
+2019-05-12 15:41:23.815+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/scala-library-2.11.12.jar
+2019-05-12 15:41:23.816+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-compiler-3.1-3.1.9.jar
+2019-05-12 15:41:23.816+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-planner-spi-3.5-3.5.3.jar
+2019-05-12 15:41:23.816+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-procedure-api-3.5.3.jar
+2019-05-12 15:41:23.816+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/parboiled-core-1.1.7.jar
+2019-05-12 15:41:23.816+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-compiler-2.3-2.3.12.jar
+2019-05-12 15:41:23.816+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-resource-3.5.3.jar
+2019-05-12 15:41:23.816+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-ir-3.5-3.5.3.jar
+2019-05-12 15:41:23.816+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/commons-io-2.6.jar
+2019-05-12 15:41:23.816+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-udc-3.5.3.jar
+2019-05-12 15:41:23.816+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-browser-3.2.16.jar
+2019-05-12 15:41:23.817+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-xml-9.4.11.v20180605.jar
+2019-05-12 15:41:23.817+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/cldrdata.jar
+2019-05-12 15:41:23.817+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/lucene-core-5.5.5.jar
+2019-05-12 15:41:23.817+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-expression-3.4-3.4.12.jar
+2019-05-12 15:41:23.817+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-collections-3.5.3.jar
+2019-05-12 15:41:23.817+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-planner-3.5-3.5.3.jar
+2019-05-12 15:41:23.817+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/scala-reflect-2.11.12.jar
+2019-05-12 15:41:23.817+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/parboiled-scala_2.11-1.1.7.jar
+2019-05-12 15:41:23.817+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar
+2019-05-12 15:41:23.818+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-webapp-9.4.11.v20180605.jar
+2019-05-12 15:41:23.818+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-ir-3.4-3.4.12.jar
+2019-05-12 15:41:23.818+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-io-3.5.3.jar
+2019-05-12 15:41:23.818+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/commons-configuration-1.10.jar
+2019-05-12 15:41:23.818+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-bolt-3.5.3.jar
+2019-05-12 15:41:23.818+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-util-9.4.11.v20180605.jar
+2019-05-12 15:41:23.818+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/commons-compress-1.18.jar
+2019-05-12 15:41:23.818+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-import-tool-3.5.3.jar
+2019-05-12 15:41:23.818+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-ast-3.5-3.5.3.jar
+2019-05-12 15:41:23.818+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/MRJToolkit.jar
+2019-05-12 15:41:23.819+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-kernel-api-3.5.3.jar
+2019-05-12 15:41:23.819+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-legacy-3.5.3.jar
+2019-05-12 15:41:23.819+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/lucene-analyzers-common-5.5.5.jar
+2019-05-12 15:41:23.819+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-rewriting-3.5-3.5.3.jar
+2019-05-12 15:41:23.819+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-planner-3.4-3.4.12.jar
+2019-05-12 15:41:23.819+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-consistency-check-3.5.3.jar
+2019-05-12 15:41:23.819+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-servlet-9.4.11.v20180605.jar
+2019-05-12 15:41:23.819+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/activation-1.1.1.jar
+2019-05-12 15:41:23.820+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-graphdb-api-3.5.3.jar
+2019-05-12 15:41:23.820+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-graph-algo-3.5.3.jar
+2019-05-12 15:41:23.820+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-server-9.4.11.v20180605.jar
+2019-05-12 15:41:23.820+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/eclipse-collections-9.2.0.jar
+2019-05-12 15:41:23.820+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/jfxrt.jar
+2019-05-12 15:41:23.820+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/server-api-3.5.3.jar
+2019-05-12 15:41:23.822+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/txw2-2.3.0.1.jar
+2019-05-12 15:41:23.823+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-ssl-3.5.3.jar
+2019-05-12 15:41:23.823+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jersey-core-1.19.3.jar
+2019-05-12 15:41:23.823+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-3.5.3.jar
+2019-05-12 15:41:23.823+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+2019-05-12 15:41:23.823+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-server-3.5.3.jar
+2019-05-12 15:41:23.824+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-logging-3.5.3.jar
+2019-05-12 15:41:23.824+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar
+2019-05-12 15:41:23.824+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/jaccess.jar
+2019-05-12 15:41:23.824+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-index-3.5.3.jar
+2019-05-12 15:41:23.824+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/lucene-queryparser-5.5.5.jar
+2019-05-12 15:41:23.824+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jPowerShell-1.9.jar
+2019-05-12 15:41:23.824+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-command-line-3.5.3.jar
+2019-05-12 15:41:23.824+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jackson-core-asl-1.9.13.jar
+2019-05-12 15:41:23.824+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-logical-plans-3.5-3.5.3.jar
+2019-05-12 15:41:23.824+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/WMI4Java-1.6.1.jar
+2019-05-12 15:41:23.824+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-logical-plans-3.4-3.4.12.jar
+2019-05-12 15:41:23.825+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+2019-05-12 15:41:23.825+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/istack-commons-runtime-3.0.5.jar
+2019-05-12 15:41:23.825+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-interpreted-runtime-3.5.3.jar
+2019-05-12 15:41:23.825+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/bcpkix-jdk15on-1.60.jar
+2019-05-12 15:41:23.825+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+2019-05-12 15:41:23.825+0000 INFO [o.n.i.d.DiagnosticsManager] Library path:
+2019-05-12 15:41:23.826+0000 INFO [o.n.i.d.DiagnosticsManager] /Users/mac/Library/Java/Extensions
+2019-05-12 15:41:23.826+0000 INFO [o.n.i.d.DiagnosticsManager] /Library/Java/Extensions
+2019-05-12 15:41:23.826+0000 INFO [o.n.i.d.DiagnosticsManager] /Network/Library/Java/Extensions
+2019-05-12 15:41:23.826+0000 INFO [o.n.i.d.DiagnosticsManager] /System/Library/Java/Extensions
+2019-05-12 15:41:23.826+0000 INFO [o.n.i.d.DiagnosticsManager] /usr/lib/java
+2019-05-12 15:41:23.827+0000 INFO [o.n.i.d.DiagnosticsManager] /Users/mac/major_graph/neo4j-community/bin
+2019-05-12 15:41:23.827+0000 INFO [o.n.i.d.DiagnosticsManager] System.properties:
+2019-05-12 15:41:23.827+0000 INFO [o.n.i.d.DiagnosticsManager] sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib
+2019-05-12 15:41:23.828+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.tls.rejectClientInitiatedRenegotiation = true
+2019-05-12 15:41:23.828+0000 INFO [o.n.i.d.DiagnosticsManager] user.country.format = CN
+2019-05-12 15:41:23.828+0000 INFO [o.n.i.d.DiagnosticsManager] gopherProxySet = false
+2019-05-12 15:41:23.828+0000 INFO [o.n.i.d.DiagnosticsManager] path.separator = :
+2019-05-12 15:41:23.828+0000 INFO [o.n.i.d.DiagnosticsManager] file.encoding.pkg = sun.io
+2019-05-12 15:41:23.828+0000 INFO [o.n.i.d.DiagnosticsManager] user.country = US
+2019-05-12 15:41:23.828+0000 INFO [o.n.i.d.DiagnosticsManager] sun.java.launcher = SUN_STANDARD
+2019-05-12 15:41:23.828+0000 INFO [o.n.i.d.DiagnosticsManager] sun.os.patch.level = unknown
+2019-05-12 15:41:23.828+0000 INFO [o.n.i.d.DiagnosticsManager] user.dir = /Users/mac/major_graph/neo4j-community/bin
+2019-05-12 15:41:23.828+0000 INFO [o.n.i.d.DiagnosticsManager] sun.jnu.encoding = UTF-8
+2019-05-12 15:41:23.829+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.udc.source = tarball
+2019-05-12 15:41:23.829+0000 INFO [o.n.i.d.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2019-05-12 15:41:23.829+0000 INFO [o.n.i.d.DiagnosticsManager] user.home = /Users/mac
+2019-05-12 15:41:23.829+0000 INFO [o.n.i.d.DiagnosticsManager] user.timezone = Asia/Shanghai
+2019-05-12 15:41:23.830+0000 INFO [o.n.i.d.DiagnosticsManager] file.encoding = UTF-8
+2019-05-12 15:41:23.830+0000 INFO [o.n.i.d.DiagnosticsManager] user.name = Jipeng
+2019-05-12 15:41:23.831+0000 INFO [o.n.i.d.DiagnosticsManager] sun.java.command = org.neo4j.server.CommunityEntryPoint --home-dir=/Users/mac/major_graph/neo4j-community --config-dir=/Users/mac/major_graph/neo4j-community/conf
+2019-05-12 15:41:23.831+0000 INFO [o.n.i.d.DiagnosticsManager] sun.arch.data.model = 64
+2019-05-12 15:41:23.831+0000 INFO [o.n.i.d.DiagnosticsManager] user.language = en
+2019-05-12 15:41:23.832+0000 INFO [o.n.i.d.DiagnosticsManager] awt.toolkit = sun.lwawt.macosx.LWCToolkit
+2019-05-12 15:41:23.832+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.tls.ephemeralDHKeySize = 2048
+2019-05-12 15:41:23.832+0000 INFO [o.n.i.d.DiagnosticsManager] file.separator = /
+2019-05-12 15:41:23.832+0000 INFO [o.n.i.d.DiagnosticsManager] sun.io.unicode.encoding = UnicodeBig
+2019-05-12 15:41:23.832+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.endian = little
+2019-05-12 15:41:23.832+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.isalist = 
+2019-05-12 15:41:23.832+0000 INFO [o.n.i.d.DiagnosticsManager] (IANA) TimeZone Database Version:
+2019-05-12 15:41:23.913+0000 INFO [o.n.i.d.DiagnosticsManager]   TimeZone version: 2015e (available for 589 zone identifiers)
+2019-05-12 15:41:23.913+0000 INFO [o.n.i.d.DiagnosticsManager] Network information:
+2019-05-12 15:41:23.925+0000 INFO [o.n.i.d.DiagnosticsManager] Interface utun0:
+2019-05-12 15:41:23.925+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:362c:81d8:8c85:9a28%utun0
+2019-05-12 15:41:23.926+0000 INFO [o.n.i.d.DiagnosticsManager] Interface awdl0:
+2019-05-12 15:41:23.929+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:b3:3eff:fed2:f666%awdl0
+2019-05-12 15:41:23.929+0000 INFO [o.n.i.d.DiagnosticsManager] Interface en0:
+2019-05-12 15:41:23.930+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:83:9968:1f7a:450%en0
+2019-05-12 15:41:23.930+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 10.27.215.3
+2019-05-12 15:41:23.930+0000 INFO [o.n.i.d.DiagnosticsManager] Interface lo0:
+2019-05-12 15:41:23.930+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:0:0:0:1%lo0
+2019-05-12 15:41:23.930+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2019-05-12 15:41:23.930+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 127.0.0.1
+2019-05-12 15:41:23.930+0000 INFO [o.n.i.d.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2019-05-12 15:41:24.563+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_4[v0.A.9] record format from store /Users/mac/major_graph/neo4j-community/data/databases/graph.db
+2019-05-12 15:41:24.614+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_4[v0.A.9] record format from store /Users/mac/major_graph/neo4j-community/data/databases/graph.db
+2019-05-12 15:41:24.614+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Format not configured. Selected format from the store: RecordFormat:StandardV3_4[v0.A.9]
+2019-05-12 15:41:25.803+0000 INFO [o.n.k.NeoStoreDataSource] No commits found after last check point (which is at LogPosition{logVersion=0, byteOffset=830113})
+2019-05-12 15:41:25.842+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2019-05-12 15:41:25.844+0000 INFO [o.n.i.d.DiagnosticsManager] Graph Database: community single StoreId{creationTime=1551326470741, randomId=7430305728590626758, storeVersion=16094931155187206, upgradeTime=1551326470741, upgradeId=1}
+2019-05-12 15:41:25.844+0000 INFO [o.n.i.d.DiagnosticsManager] Kernel version: 3.5.3,352576e6bd75ad8c1a0a8a43b3f5f7a0b3882410
+2019-05-12 15:41:25.845+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2019-05-12 15:41:25.850+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2019-05-12 15:41:25.850+0000 INFO [o.n.i.d.DiagnosticsManager] Store versions:
+2019-05-12 15:41:25.851+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2019-05-12 15:41:25.852+0000 INFO [o.n.i.d.DiagnosticsManager]   NodeStore v0.A.9
+2019-05-12 15:41:25.852+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-05-12 15:41:25.852+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyIndexStore v0.A.9
+2019-05-12 15:41:25.852+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-05-12 15:41:25.852+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2019-05-12 15:41:25.853+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyStore v0.A.9
+2019-05-12 15:41:25.853+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipStore v0.A.9
+2019-05-12 15:41:25.853+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-05-12 15:41:25.853+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipTypeStore v0.A.9
+2019-05-12 15:41:25.853+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-05-12 15:41:25.854+0000 INFO [o.n.i.d.DiagnosticsManager]   LabelTokenStore v0.A.9
+2019-05-12 15:41:25.854+0000 INFO [o.n.i.d.DiagnosticsManager]   SchemaStore v0.A.9
+2019-05-12 15:41:25.854+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipGroupStore v0.A.9
+2019-05-12 15:41:25.854+0000 INFO [o.n.i.d.DiagnosticsManager]   NeoStore v0.A.9
+2019-05-12 15:41:25.854+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2019-05-12 15:41:25.854+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2019-05-12 15:41:25.855+0000 INFO [o.n.i.d.DiagnosticsManager] Id usage:
+2019-05-12 15:41:25.855+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2019-05-12 15:41:25.856+0000 INFO [o.n.i.d.DiagnosticsManager]   NodeStore: used=91 high=446
+2019-05-12 15:41:25.856+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=15 high=14
+2019-05-12 15:41:25.856+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyIndexStore: used=14 high=13
+2019-05-12 15:41:25.856+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=18 high=115
+2019-05-12 15:41:25.857+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore: used=1 high=360
+2019-05-12 15:41:25.857+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyStore: used=147 high=819
+2019-05-12 15:41:25.857+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipStore: used=87 high=519
+2019-05-12 15:41:25.857+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=11 high=10
+2019-05-12 15:41:25.857+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipTypeStore: used=10 high=9
+2019-05-12 15:41:25.858+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=6 high=5
+2019-05-12 15:41:25.858+0000 INFO [o.n.i.d.DiagnosticsManager]   LabelTokenStore: used=5 high=4
+2019-05-12 15:41:25.858+0000 INFO [o.n.i.d.DiagnosticsManager]   SchemaStore: used=1 high=0
+2019-05-12 15:41:25.858+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipGroupStore: used=1 high=0
+2019-05-12 15:41:25.858+0000 INFO [o.n.i.d.DiagnosticsManager]   NeoStore: used=15 high=14
+2019-05-12 15:41:25.859+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2019-05-12 15:41:25.859+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS START ---
+2019-05-12 15:41:25.859+0000 INFO [o.n.i.d.DiagnosticsManager] Neostore records:
+2019-05-12 15:41:25.861+0000 INFO [o.n.i.d.DiagnosticsManager] TIME (Creation time): 1551326470741
+2019-05-12 15:41:25.861+0000 INFO [o.n.i.d.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): 7430305728590626758
+2019-05-12 15:41:25.861+0000 INFO [o.n.i.d.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2019-05-12 15:41:25.861+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 843
+2019-05-12 15:41:25.862+0000 INFO [o.n.i.d.DiagnosticsManager] STORE_VERSION (Store format version): 16094931155187206
+2019-05-12 15:41:25.862+0000 INFO [o.n.i.d.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2019-05-12 15:41:25.862+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+2019-05-12 15:41:25.862+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2019-05-12 15:41:25.862+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1551326470741
+2019-05-12 15:41:25.862+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): -161108826734
+2019-05-12 15:41:25.862+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): 0
+2019-05-12 15:41:25.863+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2019-05-12 15:41:25.863+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 830113
+2019-05-12 15:41:25.863+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): 1556937522151
+2019-05-12 15:41:25.863+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+2019-05-12 15:41:25.863+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS END ---
+2019-05-12 15:41:25.865+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE START ---
+2019-05-12 15:41:25.865+0000 INFO [o.n.i.d.DiagnosticsManager] Transaction log:
+2019-05-12 15:41:25.866+0000 INFO [o.n.i.d.DiagnosticsManager] Oldest transaction 2 found in log with version 0
+2019-05-12 15:41:25.866+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE END ---
+2019-05-12 15:41:25.873+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2019-05-12 15:41:25.874+0000 INFO [o.n.i.d.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 250790436864 / 92968632320 / 37
+2019-05-12 15:41:25.874+0000 INFO [o.n.i.d.DiagnosticsManager] Storage files: (filename : modification date - size)
+2019-05-12 15:41:25.878+0000 INFO [o.n.i.d.DiagnosticsManager]   index:
+2019-05-12 15:41:25.880+0000 INFO [o.n.i.d.DiagnosticsManager]   - Total: 2019-02-28T12:01:11+0800 - 0.00 B
+2019-05-12 15:41:25.880+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore: 2019-05-04T10:52:22+0800 - 8.00 kB
+2019-05-12 15:41:25.880+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.counts.db.a: 2019-05-04T10:52:22+0800 - 544.00 B
+2019-05-12 15:41:25.881+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.counts.db.b: 2019-05-04T10:37:22+0800 - 352.00 B
+2019-05-12 15:41:25.881+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.id: 2019-05-12T23:41:24+0800 - 9.00 B
+2019-05-12 15:41:25.881+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labelscanstore.db: 2019-05-12T23:41:25+0800 - 48.00 kB
+2019-05-12 15:41:25.881+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db: 2019-05-02T22:44:11+0800 - 8.00 kB
+2019-05-12 15:41:25.882+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2019-05-12T23:41:24+0800 - 9.00 B
+2019-05-12 15:41:25.882+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2019-05-02T22:44:11+0800 - 8.00 kB
+2019-05-12 15:41:25.882+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2019-05-12T23:41:24+0800 - 9.00 B
+2019-05-12 15:41:25.882+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db: 2019-05-04T10:52:22+0800 - 8.00 kB
+2019-05-12 15:41:25.884+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.id: 2019-05-12T23:41:24+0800 - 2.79 kB
+2019-05-12 15:41:25.884+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels: 2019-02-28T12:01:10+0800 - 8.00 kB
+2019-05-12 15:41:25.884+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2019-05-12T23:41:24+0800 - 9.00 B
+2019-05-12 15:41:25.885+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db: 2019-05-04T10:52:22+0800 - 39.84 kB
+2019-05-12 15:41:25.885+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays: 2019-02-28T14:59:04+0800 - 48.00 kB
+2019-05-12 15:41:25.885+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2019-05-12T23:41:24+0800 - 2.82 kB
+2019-05-12 15:41:25.886+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.id: 2019-05-12T23:41:24+0800 - 5.27 kB
+2019-05-12 15:41:25.886+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index: 2019-05-03T11:30:58+0800 - 8.00 kB
+2019-05-12 15:41:25.887+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.id: 2019-05-12T23:41:24+0800 - 9.00 B
+2019-05-12 15:41:25.887+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2019-05-03T11:30:58+0800 - 8.00 kB
+2019-05-12 15:41:25.887+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2019-05-12T23:41:24+0800 - 9.00 B
+2019-05-12 15:41:25.888+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings: 2019-05-04T10:52:22+0800 - 16.00 kB
+2019-05-12 15:41:25.888+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2019-05-12T23:41:24+0800 - 793.00 B
+2019-05-12 15:41:25.889+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2019-02-28T12:01:10+0800 - 8.00 kB
+2019-05-12 15:41:25.889+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2019-05-12T23:41:24+0800 - 9.00 B
+2019-05-12 15:41:25.889+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db: 2019-05-04T10:52:22+0800 - 23.91 kB
+2019-05-12 15:41:25.890+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db.id: 2019-05-12T23:41:24+0800 - 3.39 kB
+2019-05-12 15:41:25.890+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db: 2019-05-03T17:51:50+0800 - 8.00 kB
+2019-05-12 15:41:25.891+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2019-05-12T23:41:24+0800 - 9.00 B
+2019-05-12 15:41:25.891+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2019-05-03T17:51:50+0800 - 8.00 kB
+2019-05-12 15:41:25.891+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2019-05-12T23:41:24+0800 - 9.00 B
+2019-05-12 15:41:25.892+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db: 2019-02-28T12:01:10+0800 - 8.00 kB
+2019-05-12 15:41:25.892+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db.id: 2019-05-12T23:41:24+0800 - 9.00 B
+2019-05-12 15:41:25.893+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.transaction.db.0: 2019-05-04T20:21:12+0800 - 810.69 kB
+2019-05-12 15:41:25.893+0000 INFO [o.n.i.d.DiagnosticsManager] Storage summary: 
+2019-05-12 15:41:25.893+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of store: 1.06 MB
+2019-05-12 15:41:25.893+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of mapped files: 263.74 kB
+2019-05-12 15:41:25.893+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2019-05-12 15:41:25.893+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Fulfilling of requirement 'Database available' makes database graph.db available.
+2019-05-12 15:41:25.894+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is ready.
+2019-05-12 15:41:25.894+0000 INFO [o.n.k.i.DatabaseHealth] Database health set to OK
+2019-05-12 15:41:26.450+0000 INFO [o.n.b.BoltServer] Bolt server loaded
+2019-05-12 15:41:26.737+0000 INFO [o.n.b.BoltServer] Bolt enabled on 127.0.0.1:7687.
+2019-05-12 15:41:32.121+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED START ---
+2019-05-12 15:41:34.591+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED END ---
+2019-05-12 15:41:47.145+0000 WARN [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2019-05-12 15:43:14.821+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=121, gcTime=0, gcCount=0}
+2019-05-12 15:43:33.183+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 21 seconds: LOAD CSV FROM 'file:///test.csv' AS line
+MERGE(n:Test{name:line[1]})
+2019-05-12 15:57:56.110+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 847 checkpoint started...
+2019-05-12 15:57:56.169+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 847 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a].
+2019-05-12 15:57:56.185+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 847 checkpoint completed in 64ms
+2019-05-12 15:57:56.187+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-12 16:42:00.492+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=102, gcTime=0, gcCount=0}
+2019-05-12 18:16:35.665+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 9285 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-12 18:16:35.687+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 9285 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-12 18:16:39.264+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 848 checkpoint started...
+2019-05-12 18:16:39.281+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 848 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b].
+2019-05-12 18:16:39.293+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 848 checkpoint completed in 29ms
+2019-05-12 18:16:39.293+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-12 18:16:58.853+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=109, gcTime=0, gcCount=0}
+2019-05-12 18:17:13.717+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 9220 seconds: EXPLAIN LOAD CSV FROM 'file:///test.csv' AS line
+MERGE(n:Test{name:line[1]})
+2019-05-12 18:17:13.727+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 9220 seconds: LOAD CSV FROM 'file:///test.csv' AS line
+MERGE(n:Test{name:line[1]})
+2019-05-12 18:31:39.517+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 855 checkpoint started...
+2019-05-12 18:31:39.534+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 855 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a].
+2019-05-12 18:31:39.545+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 855 checkpoint completed in 24ms
+2019-05-12 18:31:39.545+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-12 21:04:19.506+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=122, gcTime=0, gcCount=0}
+2019-05-12 21:48:11.380+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=595, gcTime=0, gcCount=0}
+2019-05-12 21:48:11.496+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=157, gcTime=0, gcCount=0}
+2019-05-12 22:24:50.004+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1191, gcTime=0, gcCount=0}
+2019-05-12 22:24:50.914+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=810, gcTime=0, gcCount=0}
+2019-05-12 23:10:49.004+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1196, gcTime=0, gcCount=0}
+2019-05-12 23:10:49.899+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=795, gcTime=0, gcCount=0}
+2019-05-12 23:31:44.005+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1151, gcTime=0, gcCount=0}
+2019-05-12 23:31:44.943+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=808, gcTime=0, gcCount=0}
+2019-05-13 00:32:36.737+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=100, gcTime=0, gcCount=0}
+2019-05-13 01:38:06.957+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=135, gcTime=0, gcCount=0}
+2019-05-13 01:40:21.949+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=148, gcTime=0, gcCount=0}
+2019-05-13 01:40:22.195+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1515, gcTime=0, gcCount=0}
+2019-05-13 01:40:22.558+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=307, gcTime=0, gcCount=0}
+2019-05-13 01:40:34.531+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=139, gcTime=0, gcCount=0}
+2019-05-13 01:40:42.339+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1318, gcTime=1317, gcCount=1}
+2019-05-13 01:41:02.127+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=557, gcTime=502, gcCount=1}
+2019-05-13 01:41:26.719+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=717, gcTime=0, gcCount=0}
+2019-05-13 01:41:26.842+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=221, gcTime=0, gcCount=0}
+2019-05-13 01:41:46.370+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=137, gcTime=0, gcCount=0}
+2019-05-13 01:41:46.866+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=4507, gcTime=0, gcCount=0}
+2019-05-13 01:41:47.058+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=350, gcTime=0, gcCount=0}
+2019-05-13 01:41:57.523+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=156, gcTime=140, gcCount=1}
+2019-05-13 01:42:05.067+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=206, gcTime=0, gcCount=0}
+2019-05-13 01:42:05.461+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1367, gcTime=0, gcCount=0}
+2019-05-13 01:42:05.615+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=230, gcTime=0, gcCount=0}
+2019-05-13 01:42:08.598+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=108, gcTime=0, gcCount=0}
+2019-05-13 01:42:08.823+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=696, gcTime=0, gcCount=0}
+2019-05-13 01:42:31.184+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=112, gcTime=0, gcCount=0}
+2019-05-13 01:42:35.916+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=5303, gcTime=0, gcCount=0}
+2019-05-13 01:42:36.220+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=249, gcTime=0, gcCount=0}
+2019-05-13 01:42:36.323+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=174, gcTime=0, gcCount=0}
+2019-05-13 01:42:48.642+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=143, gcTime=0, gcCount=0}
+2019-05-13 01:42:48.833+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=226, gcTime=0, gcCount=0}
+2019-05-13 01:43:30.023+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=146, gcTime=0, gcCount=0}
+2019-05-13 01:43:30.250+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=6719, gcTime=0, gcCount=0}
+2019-05-13 01:44:12.801+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=10163, gcTime=0, gcCount=0}
+2019-05-13 01:44:12.963+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=749, gcTime=0, gcCount=0}
+2019-05-13 01:44:13.883+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=263, gcTime=0, gcCount=0}
+2019-05-13 01:44:14.396+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=263, gcTime=0, gcCount=0}
+2019-05-13 01:44:26.871+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=171, gcTime=0, gcCount=0}
+2019-05-13 01:44:32.472+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=5878, gcTime=0, gcCount=0}
+2019-05-13 01:44:32.589+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=156, gcTime=0, gcCount=0}
+2019-05-13 01:44:42.212+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=147, gcTime=0, gcCount=0}
+2019-05-13 01:44:44.991+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=2993, gcTime=0, gcCount=0}
+2019-05-13 01:44:45.107+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=190, gcTime=0, gcCount=0}
+2019-05-13 01:44:59.387+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=135, gcTime=0, gcCount=0}
+2019-05-13 01:44:59.535+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1377, gcTime=0, gcCount=0}
+2019-05-13 01:45:13.476+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=805, gcTime=0, gcCount=0}
+2019-05-13 01:45:13.875+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1181, gcTime=0, gcCount=0}
+2019-05-13 01:45:13.979+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=149, gcTime=0, gcCount=0}
+2019-05-13 01:45:14.501+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=210, gcTime=0, gcCount=0}
+2019-05-13 01:45:17.421+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=180, gcTime=0, gcCount=0}
+2019-05-13 01:45:17.623+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=101, gcTime=0, gcCount=0}
+2019-05-13 01:45:26.059+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=135, gcTime=0, gcCount=0}
+2019-05-13 01:45:26.798+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=699, gcTime=0, gcCount=0}
+2019-05-13 01:45:35.732+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=684, gcTime=0, gcCount=0}
+2019-05-13 01:45:35.920+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=8664, gcTime=7716, gcCount=1}
+2019-05-13 01:45:45.100+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=115, gcTime=0, gcCount=0}
+2019-05-13 01:45:48.304+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1552, gcTime=0, gcCount=0}
+2019-05-13 01:45:48.601+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=2836, gcTime=0, gcCount=0}
+2019-05-13 01:46:32.452+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=149, gcTime=0, gcCount=0}
+2019-05-13 01:46:32.667+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=588, gcTime=0, gcCount=0}
+2019-05-13 01:46:55.545+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=121, gcTime=0, gcCount=0}
+2019-05-13 01:46:55.821+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=781, gcTime=0, gcCount=0}
+2019-05-13 01:46:55.927+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=109, gcTime=0, gcCount=0}
+2019-05-13 01:49:53.588+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=166, gcTime=184, gcCount=1}
+2019-05-13 01:50:07.942+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=179, gcTime=0, gcCount=0}
+2019-05-13 01:50:08.151+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=107, gcTime=0, gcCount=0}
+2019-05-13 01:50:37.593+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=134, gcTime=0, gcCount=0}
+2019-05-13 01:50:38.819+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=806, gcTime=0, gcCount=0}
+2019-05-13 01:50:39.705+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1109, gcTime=0, gcCount=0}
+2019-05-13 01:50:41.129+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=833, gcTime=0, gcCount=0}
+2019-05-13 01:50:44.142+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1711, gcTime=0, gcCount=0}
+2019-05-13 01:50:46.601+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=3327, gcTime=0, gcCount=0}
+2019-05-13 01:50:46.752+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1123, gcTime=0, gcCount=0}
+2019-05-13 01:50:59.163+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=127, gcTime=0, gcCount=0}
+2019-05-13 01:51:00.365+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1819, gcTime=0, gcCount=0}
+2019-05-13 01:51:02.118+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1436, gcTime=0, gcCount=0}
+2019-05-13 01:51:02.284+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1010, gcTime=0, gcCount=0}
+2019-05-13 01:54:24.788+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=190, gcTime=108, gcCount=1}
+2019-05-13 01:58:59.003+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=640, gcTime=0, gcCount=0}
+2019-05-13 03:10:57.314+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=246, gcTime=0, gcCount=0}
+2019-05-13 03:10:57.500+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=579, gcTime=0, gcCount=0}
+2019-05-13 03:42:03.007+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1166, gcTime=0, gcCount=0}
+2019-05-13 03:42:03.911+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=803, gcTime=0, gcCount=0}
+2019-05-13 05:19:13.006+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1157, gcTime=0, gcCount=0}
+2019-05-13 05:19:13.905+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=799, gcTime=0, gcCount=0}
+2019-05-13 06:10:56.006+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1175, gcTime=0, gcCount=0}
+2019-05-13 06:10:56.907+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=800, gcTime=0, gcCount=0}
+2019-05-13 07:40:53.005+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1175, gcTime=0, gcCount=0}
+2019-05-13 07:40:53.912+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=807, gcTime=0, gcCount=0}
+2019-05-13 09:41:43.008+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1151, gcTime=0, gcCount=0}
+2019-05-13 09:41:43.922+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=813, gcTime=0, gcCount=0}
+2019-05-13 10:13:23.006+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1133, gcTime=0, gcCount=0}
+2019-05-13 10:13:23.911+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=804, gcTime=0, gcCount=0}
+2019-05-13 11:49:38.009+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1141, gcTime=0, gcCount=0}
+2019-05-13 11:49:38.974+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=841, gcTime=0, gcCount=0}
+2019-05-13 13:42:16.553+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Shutdown started
+2019-05-13 13:42:16.555+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is unavailable.
+2019-05-13 13:42:16.593+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Shutting down 'graph.db' database.
+2019-05-13 13:42:16.593+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Shutdown started
+2019-05-13 13:42:16.641+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by database shutdown @ txId: 855 checkpoint started...
+2019-05-13 13:42:16.658+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by database shutdown @ txId: 855 checkpoint completed in 17ms
+2019-05-13 13:42:16.659+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-13 13:42:16.710+0000 INFO [o.n.i.d.DiagnosticsManager] --- STOPPING diagnostics START ---
+2019-05-13 13:42:16.711+0000 INFO [o.n.i.d.DiagnosticsManager] --- STOPPING diagnostics END ---
+2019-05-14 05:04:19.765+0000 WARN [o.n.i.p.PageCache] The dbms.memory.pagecache.size setting has not been configured. It is recommended that this setting is always explicitly configured, to ensure the system has a balanced configuration. Until then, a computed heuristic value of 1610612736 bytes will be used instead. Run `neo4j-admin memrec` for memory configuration suggestions.
+2019-05-14 05:04:20.413+0000 INFO [o.n.g.f.m.e.CommunityEditionModule] No locking implementation specified, defaulting to 'community'
+2019-05-14 05:04:20.821+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Creating 'graph.db' database.
+2019-05-14 05:04:20.891+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Requirement `Database available` makes database graph.db unavailable.
+2019-05-14 05:04:20.892+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is unavailable.
+2019-05-14 05:04:20.994+0000 INFO [o.n.i.d.DiagnosticsManager] --- INITIALIZED diagnostics START ---
+2019-05-14 05:04:20.995+0000 INFO [o.n.i.d.DiagnosticsManager] Neo4j Kernel properties:
+2019-05-14 05:04:20.995+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.http.enabled=true
+2019-05-14 05:04:20.996+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.edition=community
+2019-05-14 05:04:20.996+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.security.auth_enabled=true
+2019-05-14 05:04:20.996+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.windows_service_name=neo4j
+2019-05-14 05:04:20.996+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.bolt.enabled=true
+2019-05-14 05:04:20.996+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.directories.neo4j_home=/Users/mac/major_graph/neo4j-community
+2019-05-14 05:04:20.997+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.connector.https.enabled=true
+2019-05-14 05:04:20.997+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.directories.import=import
+2019-05-14 05:04:20.997+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.jvm.additional=-XX:+UseG1GC
+2019-05-14 05:04:20.997+0000 INFO [o.n.i.d.DiagnosticsManager] dbms.tx_log.rotation.retention_policy=1 days
+2019-05-14 05:04:20.997+0000 INFO [o.n.i.d.DiagnosticsManager] Diagnostics providers:
+2019-05-14 05:04:20.997+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.kernel.configuration.Config
+2019-05-14 05:04:20.997+0000 INFO [o.n.i.d.DiagnosticsManager] org.neo4j.internal.diagnostics.DiagnosticsManager
+2019-05-14 05:04:20.998+0000 INFO [o.n.i.d.DiagnosticsManager] SYSTEM_MEMORY
+2019-05-14 05:04:20.998+0000 INFO [o.n.i.d.DiagnosticsManager] JAVA_MEMORY
+2019-05-14 05:04:20.998+0000 INFO [o.n.i.d.DiagnosticsManager] OPERATING_SYSTEM
+2019-05-14 05:04:20.998+0000 INFO [o.n.i.d.DiagnosticsManager] JAVA_VIRTUAL_MACHINE
+2019-05-14 05:04:20.998+0000 INFO [o.n.i.d.DiagnosticsManager] CLASSPATH
+2019-05-14 05:04:20.998+0000 INFO [o.n.i.d.DiagnosticsManager] LIBRARY_PATH
+2019-05-14 05:04:20.998+0000 INFO [o.n.i.d.DiagnosticsManager] SYSTEM_PROPERTIES
+2019-05-14 05:04:20.998+0000 INFO [o.n.i.d.DiagnosticsManager] TIMEZONE_DATABASE
+2019-05-14 05:04:20.999+0000 INFO [o.n.i.d.DiagnosticsManager] NETWORK
+2019-05-14 05:04:20.999+0000 INFO [o.n.i.d.DiagnosticsManager] System memory information:
+2019-05-14 05:04:21.004+0000 INFO [o.n.i.d.DiagnosticsManager] Total Physical memory: 4.00 GB
+2019-05-14 05:04:21.006+0000 INFO [o.n.i.d.DiagnosticsManager] Free Physical memory: 21.30 MB
+2019-05-14 05:04:21.008+0000 INFO [o.n.i.d.DiagnosticsManager] Committed virtual memory: 6.53 GB
+2019-05-14 05:04:21.009+0000 INFO [o.n.i.d.DiagnosticsManager] Total swap space: 1.00 GB
+2019-05-14 05:04:21.011+0000 INFO [o.n.i.d.DiagnosticsManager] Free swap space: 864.25 MB
+2019-05-14 05:04:21.011+0000 INFO [o.n.i.d.DiagnosticsManager] JVM memory information:
+2019-05-14 05:04:21.011+0000 INFO [o.n.i.d.DiagnosticsManager] Free  memory: 42.50 MB
+2019-05-14 05:04:21.011+0000 INFO [o.n.i.d.DiagnosticsManager] Total memory: 64.00 MB
+2019-05-14 05:04:21.012+0000 INFO [o.n.i.d.DiagnosticsManager] Max   memory: 1.00 GB
+2019-05-14 05:04:21.022+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: G1 Young Generation: [G1 Eden Space, G1 Survivor Space]
+2019-05-14 05:04:21.022+0000 INFO [o.n.i.d.DiagnosticsManager] Garbage Collector: G1 Old Generation: [G1 Eden Space, G1 Survivor Space, G1 Old Gen]
+2019-05-14 05:04:21.028+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Code Cache (Non-heap memory): committed=6.06 MB, used=6.03 MB, max=240.00 MB, threshold=0.00 B
+2019-05-14 05:04:21.028+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Metaspace (Non-heap memory): committed=21.12 MB, used=20.25 MB, max=-1.00 B, threshold=0.00 B
+2019-05-14 05:04:21.029+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: Compressed Class Space (Non-heap memory): committed=2.67 MB, used=2.41 MB, max=1.00 GB, threshold=0.00 B
+2019-05-14 05:04:21.029+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Eden Space (Heap memory): committed=28.00 MB, used=2.00 MB, max=-1.00 B, threshold=?
+2019-05-14 05:04:21.030+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Survivor Space (Heap memory): committed=4.00 MB, used=4.00 MB, max=-1.00 B, threshold=?
+2019-05-14 05:04:21.030+0000 INFO [o.n.i.d.DiagnosticsManager] Memory Pool: G1 Old Gen (Heap memory): committed=32.00 MB, used=13.50 MB, max=1.00 GB, threshold=0.00 B
+2019-05-14 05:04:21.030+0000 INFO [o.n.i.d.DiagnosticsManager] Operating system information:
+2019-05-14 05:04:21.034+0000 INFO [o.n.i.d.DiagnosticsManager] Operating System: Mac OS X; version: 10.14.4; arch: x86_64; cpus: 4
+2019-05-14 05:04:21.036+0000 INFO [o.n.i.d.DiagnosticsManager] Max number of file descriptors: 10240
+2019-05-14 05:04:21.037+0000 INFO [o.n.i.d.DiagnosticsManager] Number of open file descriptors: 130
+2019-05-14 05:04:21.046+0000 INFO [o.n.i.d.DiagnosticsManager] Process id: 24118@LukasdeMacBook-Air.local
+2019-05-14 05:04:21.046+0000 INFO [o.n.i.d.DiagnosticsManager] Byte order: LITTLE_ENDIAN
+2019-05-14 05:04:21.056+0000 INFO [o.n.i.d.DiagnosticsManager] Local timezone: Asia/Shanghai
+2019-05-14 05:04:21.056+0000 INFO [o.n.i.d.DiagnosticsManager] JVM information:
+2019-05-14 05:04:21.056+0000 INFO [o.n.i.d.DiagnosticsManager] VM Name: Java HotSpot(TM) 64-Bit Server VM
+2019-05-14 05:04:21.056+0000 INFO [o.n.i.d.DiagnosticsManager] VM Vendor: Oracle Corporation
+2019-05-14 05:04:21.056+0000 INFO [o.n.i.d.DiagnosticsManager] VM Version: 25.60-b23
+2019-05-14 05:04:21.057+0000 INFO [o.n.i.d.DiagnosticsManager] JIT compiler: HotSpot 64-Bit Tiered Compilers
+2019-05-14 05:04:21.059+0000 INFO [o.n.i.d.DiagnosticsManager] VM Arguments: [-XX:+UseG1GC, -XX:-OmitStackTraceInFastThrow, -XX:+AlwaysPreTouch, -XX:+UnlockExperimentalVMOptions, -XX:+TrustFinalNonStaticFields, -XX:+DisableExplicitGC, -Djdk.tls.ephemeralDHKeySize=2048, -Djdk.tls.rejectClientInitiatedRenegotiation=true, -Dunsupported.dbms.udc.source=tarball, -Dfile.encoding=UTF-8]
+2019-05-14 05:04:21.059+0000 INFO [o.n.i.d.DiagnosticsManager] Java classpath:
+2019-05-14 05:04:21.061+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-frontend-3.1-3.1.9.jar
+2019-05-14 05:04:21.061+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-security-9.4.11.v20180605.jar
+2019-05-14 05:04:21.061+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-lucene-upgrade-3.5.3.jar
+2019-05-14 05:04:21.061+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/bcprov-jdk15on-1.60.jar
+2019-05-14 05:04:21.061+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-http-9.4.11.v20180605.jar
+2019-05-14 05:04:21.061+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-common-3.5.3.jar
+2019-05-14 05:04:21.061+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jsse.jar
+2019-05-14 05:04:21.061+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jfr.jar
+2019-05-14 05:04:21.061+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-parser-3.5-3.5.3.jar
+2019-05-14 05:04:21.061+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-util-3.5-3.5.3.jar
+2019-05-14 05:04:21.062+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/commons-text-1.4.jar
+2019-05-14 05:04:21.062+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jersey-server-1.19.3.jar
+2019-05-14 05:04:21.062+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jaxb-core-2.3.0.1.jar
+2019-05-14 05:04:21.062+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/nashorn.jar
+2019-05-14 05:04:21.062+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/lib/tools.jar
+2019-05-14 05:04:21.062+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-3.5.3.jar
+2019-05-14 05:04:21.062+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/openCypher-frontend-1-3.4.12.jar
+2019-05-14 05:04:21.062+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-csv-3.5.3.jar
+2019-05-14 05:04:21.062+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-runtime-util-3.5.3.jar
+2019-05-14 05:04:21.062+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/commons-lang3-3.8.jar
+2019-05-14 05:04:21.062+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-front-end-3.5-3.5.3.jar
+2019-05-14 05:04:21.062+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/plugins/*
+2019-05-14 05:04:21.063+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/classes
+2019-05-14 05:04:21.063+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/eclipse-collections-api-9.2.0.jar
+2019-05-14 05:04:21.063+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-values-3.5.3.jar
+2019-05-14 05:04:21.063+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/caffeine-2.6.2.jar
+2019-05-14 05:04:21.063+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/opencsv-2.3.jar
+2019-05-14 05:04:21.063+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-security-3.5.3.jar
+2019-05-14 05:04:21.063+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-unsafe-3.5.3.jar
+2019-05-14 05:04:21.063+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-fulltext-index-3.5.3.jar
+2019-05-14 05:04:21.064+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jackson-mapper-asl-1.9.13.jar
+2019-05-14 05:04:21.064+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/conf/
+2019-05-14 05:04:21.064+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-concurrent-3.5.3.jar
+2019-05-14 05:04:21.064+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/localedata.jar
+2019-05-14 05:04:21.064+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/charsets.jar
+2019-05-14 05:04:21.064+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jackson-jaxrs-1.9.13.jar
+2019-05-14 05:04:21.064+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/javax.servlet-api-3.1.0.jar
+2019-05-14 05:04:21.064+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jaxb-api-2.3.0.jar
+2019-05-14 05:04:21.064+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/commons-logging-1.1.1.jar
+2019-05-14 05:04:21.064+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/plugins/
+2019-05-14 05:04:21.064+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-spatial-index-3.5.3.jar
+2019-05-14 05:04:21.064+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-expressions-3.5-3.5.3.jar
+2019-05-14 05:04:21.064+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-frontend-2.3-2.3.12.jar
+2019-05-14 05:04:21.064+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-kernel-3.5.3.jar
+2019-05-14 05:04:21.065+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-dbms-3.5.3.jar
+2019-05-14 05:04:21.065+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jsr311-api-1.1.2.r612.jar
+2019-05-14 05:04:21.065+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-configuration-3.5.3.jar
+2019-05-14 05:04:21.065+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/lucene-codecs-5.5.5.jar
+2019-05-14 05:04:21.065+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-util-3.4-3.4.12.jar
+2019-05-14 05:04:21.065+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-diagnostics-3.5.3.jar
+2019-05-14 05:04:21.065+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/concurrentlinkedhashmap-lru-1.4.2.jar
+2019-05-14 05:04:21.065+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-jmx-3.5.3.jar
+2019-05-14 05:04:21.065+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-codegen-3.5.3.jar
+2019-05-14 05:04:21.065+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jersey-servlet-1.19.3.jar
+2019-05-14 05:04:21.065+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/resources.jar
+2019-05-14 05:04:21.065+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-graph-matching-3.1.9.jar
+2019-05-14 05:04:21.065+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/rt.jar
+2019-05-14 05:04:21.065+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jProcesses-1.6.4.jar
+2019-05-14 05:04:21.066+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-planner-spi-3.4-3.4.12.jar
+2019-05-14 05:04:21.066+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-io-9.4.11.v20180605.jar
+2019-05-14 05:04:21.066+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar
+2019-05-14 05:04:21.066+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/sunec.jar
+2019-05-14 05:04:21.066+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/stax-ex-1.7.8.jar
+2019-05-14 05:04:21.066+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jaxb-runtime-2.3.0.1.jar
+2019-05-14 05:04:21.066+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/netty-all-4.1.32.Final.jar
+2019-05-14 05:04:21.066+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/FastInfoset-1.2.13.jar
+2019-05-14 05:04:21.066+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-data-collector-3.5.3.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-lucene-index-3.5.3.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/commons-lang-2.6.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/scala-library-2.11.12.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-compiler-3.1-3.1.9.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-planner-spi-3.5-3.5.3.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-procedure-api-3.5.3.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/parboiled-core-1.1.7.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-compiler-2.3-2.3.12.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-resource-3.5.3.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-ir-3.5-3.5.3.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/commons-io-2.6.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-udc-3.5.3.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-browser-3.2.16.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-xml-9.4.11.v20180605.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/cldrdata.jar
+2019-05-14 05:04:21.067+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/lucene-core-5.5.5.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-expression-3.4-3.4.12.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-collections-3.5.3.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-planner-3.5-3.5.3.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/scala-reflect-2.11.12.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/parboiled-scala_2.11-1.1.7.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/jce.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-webapp-9.4.11.v20180605.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-ir-3.4-3.4.12.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-io-3.5.3.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/commons-configuration-1.10.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-bolt-3.5.3.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-util-9.4.11.v20180605.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/commons-compress-1.18.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-import-tool-3.5.3.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-ast-3.5-3.5.3.jar
+2019-05-14 05:04:21.068+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/System/Library/Java/Extensions/MRJToolkit.jar
+2019-05-14 05:04:21.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-kernel-api-3.5.3.jar
+2019-05-14 05:04:21.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-legacy-3.5.3.jar
+2019-05-14 05:04:21.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/lucene-analyzers-common-5.5.5.jar
+2019-05-14 05:04:21.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-rewriting-3.5-3.5.3.jar
+2019-05-14 05:04:21.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-planner-3.4-3.4.12.jar
+2019-05-14 05:04:21.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-consistency-check-3.5.3.jar
+2019-05-14 05:04:21.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-servlet-9.4.11.v20180605.jar
+2019-05-14 05:04:21.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/activation-1.1.1.jar
+2019-05-14 05:04:21.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-graphdb-api-3.5.3.jar
+2019-05-14 05:04:21.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-graph-algo-3.5.3.jar
+2019-05-14 05:04:21.069+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jetty-server-9.4.11.v20180605.jar
+2019-05-14 05:04:21.070+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/eclipse-collections-9.2.0.jar
+2019-05-14 05:04:21.070+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/jfxrt.jar
+2019-05-14 05:04:21.070+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/server-api-3.5.3.jar
+2019-05-14 05:04:21.070+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/txw2-2.3.0.1.jar
+2019-05-14 05:04:21.070+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-ssl-3.5.3.jar
+2019-05-14 05:04:21.070+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jersey-core-1.19.3.jar
+2019-05-14 05:04:21.070+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-3.5.3.jar
+2019-05-14 05:04:21.070+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/dnsns.jar
+2019-05-14 05:04:21.070+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-server-3.5.3.jar
+2019-05-14 05:04:21.071+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-logging-3.5.3.jar
+2019-05-14 05:04:21.071+0000 INFO [o.n.i.d.DiagnosticsManager]  [bootstrap] /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/sunrsasign.jar
+2019-05-14 05:04:21.071+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/jaccess.jar
+2019-05-14 05:04:21.071+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-index-3.5.3.jar
+2019-05-14 05:04:21.071+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/lucene-queryparser-5.5.5.jar
+2019-05-14 05:04:21.071+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jPowerShell-1.9.jar
+2019-05-14 05:04:21.071+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-command-line-3.5.3.jar
+2019-05-14 05:04:21.071+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/jackson-core-asl-1.9.13.jar
+2019-05-14 05:04:21.071+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-logical-plans-3.5-3.5.3.jar
+2019-05-14 05:04:21.071+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/WMI4Java-1.6.1.jar
+2019-05-14 05:04:21.071+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-logical-plans-3.4-3.4.12.jar
+2019-05-14 05:04:21.071+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/zipfs.jar
+2019-05-14 05:04:21.072+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/istack-commons-runtime-3.0.5.jar
+2019-05-14 05:04:21.072+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/neo4j-cypher-interpreted-runtime-3.5.3.jar
+2019-05-14 05:04:21.072+0000 INFO [o.n.i.d.DiagnosticsManager]  [classpath + loader.0] file:/Users/mac/major_graph/neo4j-community/lib/bcpkix-jdk15on-1.60.jar
+2019-05-14 05:04:21.072+0000 INFO [o.n.i.d.DiagnosticsManager]  [loader.1] file:/Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar
+2019-05-14 05:04:21.072+0000 INFO [o.n.i.d.DiagnosticsManager] Library path:
+2019-05-14 05:04:21.073+0000 INFO [o.n.i.d.DiagnosticsManager] /Users/mac/Library/Java/Extensions
+2019-05-14 05:04:21.073+0000 INFO [o.n.i.d.DiagnosticsManager] /Library/Java/Extensions
+2019-05-14 05:04:21.073+0000 INFO [o.n.i.d.DiagnosticsManager] /Network/Library/Java/Extensions
+2019-05-14 05:04:21.073+0000 INFO [o.n.i.d.DiagnosticsManager] /System/Library/Java/Extensions
+2019-05-14 05:04:21.073+0000 INFO [o.n.i.d.DiagnosticsManager] /usr/lib/java
+2019-05-14 05:04:21.073+0000 INFO [o.n.i.d.DiagnosticsManager] /Users/mac/major_graph/neo4j-community/bin
+2019-05-14 05:04:21.074+0000 INFO [o.n.i.d.DiagnosticsManager] System.properties:
+2019-05-14 05:04:21.074+0000 INFO [o.n.i.d.DiagnosticsManager] sun.boot.library.path = /Library/Java/JavaVirtualMachines/jdk1.8.0_60.jdk/Contents/Home/jre/lib
+2019-05-14 05:04:21.074+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.tls.rejectClientInitiatedRenegotiation = true
+2019-05-14 05:04:21.074+0000 INFO [o.n.i.d.DiagnosticsManager] user.country.format = CN
+2019-05-14 05:04:21.075+0000 INFO [o.n.i.d.DiagnosticsManager] gopherProxySet = false
+2019-05-14 05:04:21.075+0000 INFO [o.n.i.d.DiagnosticsManager] path.separator = :
+2019-05-14 05:04:21.075+0000 INFO [o.n.i.d.DiagnosticsManager] file.encoding.pkg = sun.io
+2019-05-14 05:04:21.075+0000 INFO [o.n.i.d.DiagnosticsManager] user.country = US
+2019-05-14 05:04:21.075+0000 INFO [o.n.i.d.DiagnosticsManager] sun.java.launcher = SUN_STANDARD
+2019-05-14 05:04:21.075+0000 INFO [o.n.i.d.DiagnosticsManager] sun.os.patch.level = unknown
+2019-05-14 05:04:21.075+0000 INFO [o.n.i.d.DiagnosticsManager] user.dir = /Users/mac/major_graph/neo4j-community/bin
+2019-05-14 05:04:21.075+0000 INFO [o.n.i.d.DiagnosticsManager] sun.jnu.encoding = UTF-8
+2019-05-14 05:04:21.075+0000 INFO [o.n.i.d.DiagnosticsManager] unsupported.dbms.udc.source = tarball
+2019-05-14 05:04:21.076+0000 INFO [o.n.i.d.DiagnosticsManager] sun.management.compiler = HotSpot 64-Bit Tiered Compilers
+2019-05-14 05:04:21.076+0000 INFO [o.n.i.d.DiagnosticsManager] user.home = /Users/mac
+2019-05-14 05:04:21.076+0000 INFO [o.n.i.d.DiagnosticsManager] user.timezone = Asia/Shanghai
+2019-05-14 05:04:21.076+0000 INFO [o.n.i.d.DiagnosticsManager] file.encoding = UTF-8
+2019-05-14 05:04:21.076+0000 INFO [o.n.i.d.DiagnosticsManager] user.name = Jipeng
+2019-05-14 05:04:21.076+0000 INFO [o.n.i.d.DiagnosticsManager] sun.java.command = org.neo4j.server.CommunityEntryPoint --home-dir=/Users/mac/major_graph/neo4j-community --config-dir=/Users/mac/major_graph/neo4j-community/conf
+2019-05-14 05:04:21.076+0000 INFO [o.n.i.d.DiagnosticsManager] sun.arch.data.model = 64
+2019-05-14 05:04:21.076+0000 INFO [o.n.i.d.DiagnosticsManager] user.language = en
+2019-05-14 05:04:21.076+0000 INFO [o.n.i.d.DiagnosticsManager] awt.toolkit = sun.lwawt.macosx.LWCToolkit
+2019-05-14 05:04:21.076+0000 INFO [o.n.i.d.DiagnosticsManager] jdk.tls.ephemeralDHKeySize = 2048
+2019-05-14 05:04:21.077+0000 INFO [o.n.i.d.DiagnosticsManager] file.separator = /
+2019-05-14 05:04:21.077+0000 INFO [o.n.i.d.DiagnosticsManager] sun.io.unicode.encoding = UnicodeBig
+2019-05-14 05:04:21.077+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.endian = little
+2019-05-14 05:04:21.077+0000 INFO [o.n.i.d.DiagnosticsManager] sun.cpu.isalist = 
+2019-05-14 05:04:21.077+0000 INFO [o.n.i.d.DiagnosticsManager] (IANA) TimeZone Database Version:
+2019-05-14 05:04:21.136+0000 INFO [o.n.i.d.DiagnosticsManager]   TimeZone version: 2015e (available for 589 zone identifiers)
+2019-05-14 05:04:21.136+0000 INFO [o.n.i.d.DiagnosticsManager] Network information:
+2019-05-14 05:04:21.145+0000 INFO [o.n.i.d.DiagnosticsManager] Interface utun0:
+2019-05-14 05:04:21.146+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:71c3:fe14:968b:3d6e%utun0
+2019-05-14 05:04:21.146+0000 INFO [o.n.i.d.DiagnosticsManager] Interface awdl0:
+2019-05-14 05:04:21.146+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:a4bc:9cff:fe42:6965%awdl0
+2019-05-14 05:04:21.146+0000 INFO [o.n.i.d.DiagnosticsManager] Interface en0:
+2019-05-14 05:04:21.146+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:42e:43f4:1b8f:9882%en0
+2019-05-14 05:04:21.146+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 10.27.215.3
+2019-05-14 05:04:21.146+0000 INFO [o.n.i.d.DiagnosticsManager] Interface lo0:
+2019-05-14 05:04:21.146+0000 INFO [o.n.i.d.DiagnosticsManager]     address: fe80:0:0:0:0:0:0:1%lo0
+2019-05-14 05:04:21.146+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 0:0:0:0:0:0:0:1
+2019-05-14 05:04:21.147+0000 INFO [o.n.i.d.DiagnosticsManager]     address: 127.0.0.1
+2019-05-14 05:04:21.147+0000 INFO [o.n.i.d.DiagnosticsManager] --- INITIALIZED diagnostics END ---
+2019-05-14 05:04:21.721+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_4[v0.A.9] record format from store /Users/mac/major_graph/neo4j-community/data/databases/graph.db
+2019-05-14 05:04:21.771+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Selected RecordFormat:StandardV3_4[v0.A.9] record format from store /Users/mac/major_graph/neo4j-community/data/databases/graph.db
+2019-05-14 05:04:21.772+0000 INFO [o.n.k.i.s.f.RecordFormatSelector] Format not configured. Selected format from the store: RecordFormat:StandardV3_4[v0.A.9]
+2019-05-14 05:04:22.802+0000 INFO [o.n.k.NeoStoreDataSource] No commits found after last check point (which is at LogPosition{logVersion=0, byteOffset=900433})
+2019-05-14 05:04:22.837+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions START ---
+2019-05-14 05:04:22.837+0000 INFO [o.n.i.d.DiagnosticsManager] Graph Database: community single StoreId{creationTime=1551326470741, randomId=7430305728590626758, storeVersion=16094931155187206, upgradeTime=1551326470741, upgradeId=1}
+2019-05-14 05:04:22.838+0000 INFO [o.n.i.d.DiagnosticsManager] Kernel version: 3.5.3,352576e6bd75ad8c1a0a8a43b3f5f7a0b3882410
+2019-05-14 05:04:22.838+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:Versions END ---
+2019-05-14 05:04:22.844+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS START ---
+2019-05-14 05:04:22.845+0000 INFO [o.n.i.d.DiagnosticsManager] Store versions:
+2019-05-14 05:04:22.845+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2019-05-14 05:04:22.846+0000 INFO [o.n.i.d.DiagnosticsManager]   NodeStore v0.A.9
+2019-05-14 05:04:22.846+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-05-14 05:04:22.846+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyIndexStore v0.A.9
+2019-05-14 05:04:22.846+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-05-14 05:04:22.846+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore v0.A.9
+2019-05-14 05:04:22.846+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyStore v0.A.9
+2019-05-14 05:04:22.846+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipStore v0.A.9
+2019-05-14 05:04:22.847+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-05-14 05:04:22.847+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipTypeStore v0.A.9
+2019-05-14 05:04:22.847+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore v0.A.9
+2019-05-14 05:04:22.847+0000 INFO [o.n.i.d.DiagnosticsManager]   LabelTokenStore v0.A.9
+2019-05-14 05:04:22.847+0000 INFO [o.n.i.d.DiagnosticsManager]   SchemaStore v0.A.9
+2019-05-14 05:04:22.847+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipGroupStore v0.A.9
+2019-05-14 05:04:22.847+0000 INFO [o.n.i.d.DiagnosticsManager]   NeoStore v0.A.9
+2019-05-14 05:04:22.848+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_VERSIONS END ---
+2019-05-14 05:04:22.848+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE START ---
+2019-05-14 05:04:22.848+0000 INFO [o.n.i.d.DiagnosticsManager] Id usage:
+2019-05-14 05:04:22.849+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore: used=1 high=0
+2019-05-14 05:04:22.849+0000 INFO [o.n.i.d.DiagnosticsManager]   NodeStore: used=91 high=446
+2019-05-14 05:04:22.849+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=15 high=14
+2019-05-14 05:04:22.850+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyIndexStore: used=14 high=13
+2019-05-14 05:04:22.850+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=18 high=115
+2019-05-14 05:04:22.850+0000 INFO [o.n.i.d.DiagnosticsManager]   ArrayPropertyStore: used=1 high=360
+2019-05-14 05:04:22.850+0000 INFO [o.n.i.d.DiagnosticsManager]   PropertyStore: used=147 high=819
+2019-05-14 05:04:22.850+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipStore: used=86 high=519
+2019-05-14 05:04:22.851+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=11 high=10
+2019-05-14 05:04:22.851+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipTypeStore: used=10 high=9
+2019-05-14 05:04:22.851+0000 INFO [o.n.i.d.DiagnosticsManager]   StringPropertyStore: used=6 high=5
+2019-05-14 05:04:22.851+0000 INFO [o.n.i.d.DiagnosticsManager]   LabelTokenStore: used=5 high=4
+2019-05-14 05:04:22.851+0000 INFO [o.n.i.d.DiagnosticsManager]   SchemaStore: used=1 high=0
+2019-05-14 05:04:22.851+0000 INFO [o.n.i.d.DiagnosticsManager]   RelationshipGroupStore: used=1 high=0
+2019-05-14 05:04:22.852+0000 INFO [o.n.i.d.DiagnosticsManager]   NeoStore: used=15 high=14
+2019-05-14 05:04:22.852+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_ID_USAGE END ---
+2019-05-14 05:04:22.852+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS START ---
+2019-05-14 05:04:22.852+0000 INFO [o.n.i.d.DiagnosticsManager] Neostore records:
+2019-05-14 05:04:22.853+0000 INFO [o.n.i.d.DiagnosticsManager] TIME (Creation time): 1551326470741
+2019-05-14 05:04:22.853+0000 INFO [o.n.i.d.DiagnosticsManager] RANDOM_NUMBER (Random number for store id): 7430305728590626758
+2019-05-14 05:04:22.854+0000 INFO [o.n.i.d.DiagnosticsManager] LOG_VERSION (Current log version): 0
+2019-05-14 05:04:22.854+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_ID (Last committed transaction): 855
+2019-05-14 05:04:22.854+0000 INFO [o.n.i.d.DiagnosticsManager] STORE_VERSION (Store format version): 16094931155187206
+2019-05-14 05:04:22.854+0000 INFO [o.n.i.d.DiagnosticsManager] FIRST_GRAPH_PROPERTY (First property record containing graph properties): -1
+2019-05-14 05:04:22.854+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CONSTRAINT_TRANSACTION (Last committed transaction containing constraint changes): 0
+2019-05-14 05:04:22.854+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_ID (Transaction id most recent upgrade was performed at): 1
+2019-05-14 05:04:22.854+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TIME (Time of last upgrade): 1551326470741
+2019-05-14 05:04:22.855+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_CHECKSUM (Checksum of last committed transaction): -159696792146
+2019-05-14 05:04:22.855+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_CHECKSUM (Checksum of transaction id the most recent upgrade was performed at): 0
+2019-05-14 05:04:22.855+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_VERSION (Log version where the last transaction commit entry has been written into): 0
+2019-05-14 05:04:22.855+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_CLOSED_TRANSACTION_LOG_BYTE_OFFSET (Byte offset in the log file where the last transaction commit entry has been written into): 900433
+2019-05-14 05:04:22.855+0000 INFO [o.n.i.d.DiagnosticsManager] LAST_TRANSACTION_COMMIT_TIMESTAMP (Commit time timestamp for last committed transaction): 1557685487614
+2019-05-14 05:04:22.856+0000 INFO [o.n.i.d.DiagnosticsManager] UPGRADE_TRANSACTION_COMMIT_TIMESTAMP (Commit timestamp of transaction the most recent upgrade was performed at): 0
+2019-05-14 05:04:22.856+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for NEO_STORE_RECORDS END ---
+2019-05-14 05:04:22.857+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE START ---
+2019-05-14 05:04:22.858+0000 INFO [o.n.i.d.DiagnosticsManager] Transaction log:
+2019-05-14 05:04:22.859+0000 INFO [o.n.i.d.DiagnosticsManager] Oldest transaction 2 found in log with version 0
+2019-05-14 05:04:22.859+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for TRANSACTION_RANGE END ---
+2019-05-14 05:04:22.867+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles START ---
+2019-05-14 05:04:22.868+0000 INFO [o.n.i.d.DiagnosticsManager] Disk space on partition (Total / Free / Free %): 250790436864 / 92287803392 / 36
+2019-05-14 05:04:22.868+0000 INFO [o.n.i.d.DiagnosticsManager] Storage files: (filename : modification date - size)
+2019-05-14 05:04:22.874+0000 INFO [o.n.i.d.DiagnosticsManager]   index:
+2019-05-14 05:04:22.875+0000 INFO [o.n.i.d.DiagnosticsManager]   - Total: 2019-02-28T12:01:11+0800 - 0.00 B
+2019-05-14 05:04:22.876+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore: 2019-05-13T02:31:39+0800 - 8.00 kB
+2019-05-14 05:04:22.876+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.counts.db.a: 2019-05-13T02:16:39+0800 - 352.00 B
+2019-05-14 05:04:22.876+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.counts.db.b: 2019-05-13T02:31:39+0800 - 544.00 B
+2019-05-14 05:04:22.877+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.id: 2019-05-14T13:04:21+0800 - 9.00 B
+2019-05-14 05:04:22.877+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labelscanstore.db: 2019-05-14T13:04:22+0800 - 48.00 kB
+2019-05-14 05:04:22.878+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db: 2019-05-02T22:44:11+0800 - 8.00 kB
+2019-05-14 05:04:22.878+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.id: 2019-05-14T13:04:21+0800 - 9.00 B
+2019-05-14 05:04:22.878+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names: 2019-05-02T22:44:11+0800 - 8.00 kB
+2019-05-14 05:04:22.878+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.labeltokenstore.db.names.id: 2019-05-14T13:04:21+0800 - 9.00 B
+2019-05-14 05:04:22.879+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db: 2019-05-13T02:31:39+0800 - 8.00 kB
+2019-05-14 05:04:22.879+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.id: 2019-05-14T13:04:21+0800 - 2.79 kB
+2019-05-14 05:04:22.880+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels: 2019-02-28T12:01:10+0800 - 8.00 kB
+2019-05-14 05:04:22.880+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.nodestore.db.labels.id: 2019-05-14T13:04:21+0800 - 9.00 B
+2019-05-14 05:04:22.881+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db: 2019-05-13T02:31:39+0800 - 39.84 kB
+2019-05-14 05:04:22.881+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays: 2019-02-28T14:59:04+0800 - 48.00 kB
+2019-05-14 05:04:22.882+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.arrays.id: 2019-05-14T13:04:21+0800 - 2.82 kB
+2019-05-14 05:04:22.882+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.id: 2019-05-14T13:04:21+0800 - 5.27 kB
+2019-05-14 05:04:22.882+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index: 2019-05-03T11:30:58+0800 - 8.00 kB
+2019-05-14 05:04:22.883+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.id: 2019-05-14T13:04:21+0800 - 9.00 B
+2019-05-14 05:04:22.883+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys: 2019-05-03T11:30:58+0800 - 8.00 kB
+2019-05-14 05:04:22.884+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.index.keys.id: 2019-05-14T13:04:21+0800 - 9.00 B
+2019-05-14 05:04:22.884+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings: 2019-05-13T02:31:39+0800 - 16.00 kB
+2019-05-14 05:04:22.884+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.propertystore.db.strings.id: 2019-05-14T13:04:21+0800 - 793.00 B
+2019-05-14 05:04:22.885+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db: 2019-02-28T12:01:10+0800 - 8.00 kB
+2019-05-14 05:04:22.885+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipgroupstore.db.id: 2019-05-14T13:04:21+0800 - 9.00 B
+2019-05-14 05:04:22.886+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db: 2019-05-13T02:31:39+0800 - 23.91 kB
+2019-05-14 05:04:22.886+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshipstore.db.id: 2019-05-14T13:04:21+0800 - 3.40 kB
+2019-05-14 05:04:22.886+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db: 2019-05-03T17:51:50+0800 - 8.00 kB
+2019-05-14 05:04:22.887+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.id: 2019-05-14T13:04:21+0800 - 9.00 B
+2019-05-14 05:04:22.887+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names: 2019-05-03T17:51:50+0800 - 8.00 kB
+2019-05-14 05:04:22.888+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.relationshiptypestore.db.names.id: 2019-05-14T13:04:21+0800 - 9.00 B
+2019-05-14 05:04:22.888+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db: 2019-02-28T12:01:10+0800 - 8.00 kB
+2019-05-14 05:04:22.888+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.schemastore.db.id: 2019-05-14T13:04:21+0800 - 9.00 B
+2019-05-14 05:04:22.889+0000 INFO [o.n.i.d.DiagnosticsManager]   neostore.transaction.db.0: 2019-05-13T21:42:16+0800 - 879.36 kB
+2019-05-14 05:04:22.889+0000 INFO [o.n.i.d.DiagnosticsManager] Storage summary: 
+2019-05-14 05:04:22.889+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of store: 1.13 MB
+2019-05-14 05:04:22.889+0000 INFO [o.n.i.d.DiagnosticsManager]   Total size of mapped files: 263.74 kB
+2019-05-14 05:04:22.890+0000 INFO [o.n.i.d.DiagnosticsManager] --- STARTED diagnostics for KernelDiagnostics:StoreFiles END ---
+2019-05-14 05:04:22.890+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Fulfilling of requirement 'Database available' makes database graph.db available.
+2019-05-14 05:04:22.891+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is ready.
+2019-05-14 05:04:22.891+0000 INFO [o.n.k.i.DatabaseHealth] Database health set to OK
+2019-05-14 05:04:23.833+0000 INFO [o.n.b.BoltServer] Bolt server loaded
+2019-05-14 05:04:24.236+0000 INFO [o.n.b.BoltServer] Bolt enabled on 127.0.0.1:7687.
+2019-05-14 05:04:29.074+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED START ---
+2019-05-14 05:04:31.391+0000 INFO [o.n.i.d.DiagnosticsManager] --- SERVER STARTED END ---
+2019-05-14 05:04:33.957+0000 WARN [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2019-05-14 05:07:37.581+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=103, gcTime=0, gcCount=0}
+2019-05-14 06:26:15.010+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1564, gcTime=0, gcCount=0}
+2019-05-14 06:26:15.923+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=812, gcTime=0, gcCount=0}
+2019-05-14 06:26:44.012+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1507, gcTime=0, gcCount=0}
+2019-05-14 06:26:44.935+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=822, gcTime=0, gcCount=0}
+2019-05-14 06:26:45.496+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=173, gcTime=0, gcCount=0}
+2019-05-14 06:43:28.288+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=174, gcTime=0, gcCount=0}
+2019-05-14 08:01:08.023+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1570, gcTime=0, gcCount=0}
+2019-05-14 08:01:08.936+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=823, gcTime=0, gcCount=0}
+2019-05-14 12:46:20.027+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1518, gcTime=0, gcCount=0}
+2019-05-14 12:46:20.897+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=788, gcTime=0, gcCount=0}
+2019-05-14 18:14:28.853+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=6617, gcTime=0, gcCount=0}
+2019-05-14 18:14:29.146+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=659, gcTime=0, gcCount=0}
+2019-05-14 18:14:29.376+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=135, gcTime=0, gcCount=0}
+2019-05-14 21:28:36.019+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1602, gcTime=0, gcCount=0}
+2019-05-14 21:28:36.909+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=799, gcTime=0, gcCount=0}
+2019-05-15 04:37:36.375+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=5817, gcTime=0, gcCount=0}
+2019-05-15 04:37:36.930+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=710, gcTime=0, gcCount=0}
+2019-05-15 04:38:49.011+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1125, gcTime=0, gcCount=0}
+2019-05-15 06:10:24.382+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=101, gcTime=0, gcCount=0}
+2019-05-15 15:30:32.032+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1577, gcTime=0, gcCount=0}
+2019-05-15 15:30:32.919+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=808, gcTime=0, gcCount=0}
+2019-05-15 15:30:33.123+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=103, gcTime=0, gcCount=0}
+2019-05-15 18:33:47.642+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1224, gcTime=0, gcCount=0}
+2019-05-15 18:35:03.606+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=108, gcTime=0, gcCount=0}
+2019-05-16 03:41:57.144+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=12516, gcTime=0, gcCount=0}
+2019-05-16 03:41:57.368+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=2053, gcTime=0, gcCount=0}
+2019-05-16 04:20:44.009+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1216, gcTime=0, gcCount=0}
+2019-05-16 05:18:47.785+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1223, gcTime=0, gcCount=0}
+2019-05-16 05:18:47.890+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=783, gcTime=0, gcCount=0}
+2019-05-16 08:32:23.058+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=169, gcTime=0, gcCount=0}
+2019-05-16 08:32:23.162+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=189, gcTime=0, gcCount=0}
+2019-05-16 10:55:57.141+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=110, gcTime=0, gcCount=0}
+2019-05-16 10:55:57.262+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=688, gcTime=0, gcCount=0}
+2019-05-16 10:55:57.467+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=104, gcTime=0, gcCount=0}
+2019-05-16 10:55:57.723+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=156, gcTime=0, gcCount=0}
+2019-05-16 11:11:02.011+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=145, gcTime=0, gcCount=0}
+2019-05-16 11:11:03.246+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=101, gcTime=0, gcCount=0}
+2019-05-16 11:11:11.798+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=167, gcTime=0, gcCount=0}
+2019-05-16 11:11:12.029+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=468, gcTime=0, gcCount=0}
+2019-05-16 12:35:12.457+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=405, gcTime=0, gcCount=0}
+2019-05-16 12:35:12.662+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=214, gcTime=0, gcCount=0}
+2019-05-16 12:35:13.246+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=177, gcTime=0, gcCount=0}
+2019-05-16 12:35:13.559+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=191, gcTime=0, gcCount=0}
+2019-05-16 12:35:13.800+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=161, gcTime=0, gcCount=0}
+2019-05-16 12:35:28.868+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=242, gcTime=0, gcCount=0}
+2019-05-16 12:35:28.997+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=213, gcTime=0, gcCount=0}
+2019-05-16 13:39:42.534+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=135, gcTime=0, gcCount=0}
+2019-05-16 13:39:42.814+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=528, gcTime=0, gcCount=0}
+2019-05-16 14:19:13.820+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=137, gcTime=0, gcCount=0}
+2019-05-16 14:19:13.953+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=135, gcTime=0, gcCount=0}
+2019-05-16 15:51:07.013+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1583, gcTime=0, gcCount=0}
+2019-05-16 15:51:07.944+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=830, gcTime=0, gcCount=0}
+2019-05-16 16:02:20.026+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1564, gcTime=0, gcCount=0}
+2019-05-16 16:02:20.928+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=815, gcTime=0, gcCount=0}
+2019-05-16 18:55:56.875+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1538, gcTime=0, gcCount=0}
+2019-05-16 18:55:56.983+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=874, gcTime=0, gcCount=0}
+2019-05-17 01:00:03.090+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=6145, gcTime=0, gcCount=0}
+2019-05-17 01:00:03.218+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=774, gcTime=0, gcCount=0}
+2019-05-17 01:47:34.011+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1489, gcTime=0, gcCount=0}
+2019-05-17 03:01:04.029+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1556, gcTime=0, gcCount=0}
+2019-05-17 03:01:04.945+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=831, gcTime=0, gcCount=0}
+2019-05-17 03:58:47.843+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1548, gcTime=0, gcCount=0}
+2019-05-17 03:58:47.947+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=838, gcTime=0, gcCount=0}
+2019-05-17 04:37:50.005+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1187, gcTime=0, gcCount=0}
+2019-05-17 04:37:50.883+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=778, gcTime=0, gcCount=0}
+2019-05-17 04:57:26.005+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1164, gcTime=0, gcCount=0}
+2019-05-17 04:57:26.894+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=789, gcTime=0, gcCount=0}
+2019-05-17 08:13:56.796+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=298, gcTime=0, gcCount=0}
+2019-05-17 08:13:56.911+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=181, gcTime=0, gcCount=0}
+2019-05-17 08:22:30.013+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1572, gcTime=0, gcCount=0}
+2019-05-17 08:22:30.928+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=815, gcTime=0, gcCount=0}
+2019-05-17 10:07:53.850+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1475, gcTime=0, gcCount=0}
+2019-05-17 10:07:53.957+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=848, gcTime=0, gcCount=0}
+2019-05-17 10:16:57.024+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1265, gcTime=0, gcCount=0}
+2019-05-17 10:16:57.900+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=790, gcTime=0, gcCount=0}
+2019-05-17 14:45:03.007+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1491, gcTime=0, gcCount=0}
+2019-05-17 14:45:03.875+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=769, gcTime=0, gcCount=0}
+2019-05-17 17:25:14.478+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=7105, gcTime=0, gcCount=0}
+2019-05-17 17:25:14.781+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=494, gcTime=0, gcCount=0}
+2019-05-17 19:02:13.801+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1568, gcTime=0, gcCount=0}
+2019-05-17 19:02:13.920+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=811, gcTime=0, gcCount=0}
+2019-05-18 01:30:04.569+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=6371, gcTime=0, gcCount=0}
+2019-05-18 01:30:05.105+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=883, gcTime=0, gcCount=0}
+2019-05-18 01:57:10.006+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1458, gcTime=0, gcCount=0}
+2019-05-18 15:39:08.536+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1579, gcTime=0, gcCount=0}
+2019-05-18 15:39:08.676+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1565, gcTime=0, gcCount=0}
+2019-05-18 18:00:04.887+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1556, gcTime=0, gcCount=0}
+2019-05-18 18:00:05.005+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=896, gcTime=0, gcCount=0}
+2019-05-19 01:40:01.872+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=5608, gcTime=0, gcCount=0}
+2019-05-19 01:40:02.255+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1025, gcTime=0, gcCount=0}
+2019-05-19 02:27:39.010+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1436, gcTime=0, gcCount=0}
+2019-05-19 04:56:57.525+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=105, gcTime=0, gcCount=0}
+2019-05-19 18:25:49.062+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1519, gcTime=0, gcCount=0}
+2019-05-19 18:25:49.236+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1127, gcTime=0, gcCount=0}
+2019-05-19 19:02:47.007+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1145, gcTime=0, gcCount=0}
+2019-05-19 19:02:47.896+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=788, gcTime=0, gcCount=0}
+2019-05-19 21:14:37.929+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1206, gcTime=0, gcCount=0}
+2019-05-19 21:14:38.038+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=932, gcTime=0, gcCount=0}
+2019-05-19 22:43:31.004+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1163, gcTime=0, gcCount=0}
+2019-05-19 22:43:31.911+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=806, gcTime=0, gcCount=0}
+2019-05-20 00:15:00.004+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1176, gcTime=0, gcCount=0}
+2019-05-20 00:15:00.888+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=783, gcTime=0, gcCount=0}
+2019-05-20 02:13:13.017+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1176, gcTime=0, gcCount=0}
+2019-05-20 02:13:13.922+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=817, gcTime=0, gcCount=0}
+2019-05-20 18:15:02.012+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1459, gcTime=0, gcCount=0}
+2019-05-20 18:15:02.915+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=802, gcTime=0, gcCount=0}
+2019-05-20 23:15:02.398+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=7043, gcTime=0, gcCount=0}
+2019-05-20 23:15:02.780+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=575, gcTime=0, gcCount=0}
+2019-05-21 02:19:44.016+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1460, gcTime=0, gcCount=0}
+2019-05-21 02:19:44.928+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=819, gcTime=0, gcCount=0}
+2019-05-21 07:14:47.976+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=104, gcTime=0, gcCount=0}
+2019-05-21 07:47:58.339+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=364, gcTime=0, gcCount=0}
+2019-05-21 07:47:58.472+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=584, gcTime=0, gcCount=0}
+2019-05-21 11:34:10.431+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=175, gcTime=0, gcCount=0}
+2019-05-21 13:56:03.412+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=398, gcTime=0, gcCount=0}
+2019-05-21 13:56:03.536+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=698, gcTime=0, gcCount=0}
+2019-05-21 15:05:03.133+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1556, gcTime=0, gcCount=0}
+2019-05-21 15:05:03.411+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1295, gcTime=0, gcCount=0}
+2019-05-21 15:05:23.394+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=121, gcTime=0, gcCount=0}
+2019-05-21 17:08:49.869+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1582, gcTime=0, gcCount=0}
+2019-05-21 17:08:49.982+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=860, gcTime=0, gcCount=0}
+2019-05-21 21:05:18.124+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=11081, gcTime=0, gcCount=0}
+2019-05-21 21:05:19.150+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1269, gcTime=0, gcCount=0}
+2019-05-21 21:05:19.528+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=276, gcTime=0, gcCount=0}
+2019-05-21 21:32:48.564+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=135, gcTime=0, gcCount=0}
+2019-05-21 21:32:48.683+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=208, gcTime=0, gcCount=0}
+2019-05-22 00:34:37.834+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1517, gcTime=0, gcCount=0}
+2019-05-22 00:34:37.964+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=850, gcTime=0, gcCount=0}
+2019-05-22 00:51:36.032+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1606, gcTime=0, gcCount=0}
+2019-05-22 00:51:36.924+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=811, gcTime=0, gcCount=0}
+2019-05-22 01:05:26.018+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=202, gcTime=0, gcCount=0}
+2019-05-22 01:05:26.150+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=258, gcTime=0, gcCount=0}
+2019-05-22 01:33:19.013+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1590, gcTime=0, gcCount=0}
+2019-05-22 01:33:20.048+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=935, gcTime=0, gcCount=0}
+2019-05-22 01:36:35.019+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1574, gcTime=0, gcCount=0}
+2019-05-22 01:36:35.907+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=793, gcTime=0, gcCount=0}
+2019-05-22 01:51:39.890+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=100, gcTime=0, gcCount=0}
+2019-05-22 02:01:17.457+0000 WARN [o.n.b.r.DefaultBoltConnection] The client is unauthorized due to authentication failure.
+2019-05-22 02:02:17.112+0000 ERROR [o.n.b.v.r.ErrorReporter] Client triggered an unexpected error [Neo.DatabaseError.General.UnknownError]: java.net.URISyntaxException: Illegal character in path at index 10: file:/test copy.csv, reference 5fb444a5-00d7-4181-8ee4-df712a3116c3.
+2019-05-22 02:02:17.113+0000 ERROR [o.n.b.v.r.ErrorReporter] Client triggered an unexpected error [Neo.DatabaseError.General.UnknownError]: java.net.URISyntaxException: Illegal character in path at index 10: file:/test copy.csv, reference 5fb444a5-00d7-4181-8ee4-df712a3116c3. java.net.URISyntaxException: Illegal character in path at index 10: file:/test copy.csv
+java.lang.RuntimeException: java.net.URISyntaxException: Illegal character in path at index 10: file:/test copy.csv
+	at org.neo4j.kernel.impl.security.FileURLAccessRule.validate(FileURLAccessRule.java:79)
+	at org.neo4j.kernel.impl.security.URLAccessRules.lambda$combined$1(URLAccessRules.java:58)
+	at org.neo4j.graphdb.facade.spi.ClassicCoreSPI.validateURLAccess(ClassicCoreSPI.java:143)
+	at org.neo4j.kernel.impl.factory.GraphDatabaseFacade.validateURLAccess(GraphDatabaseFacade.java:918)
+	at org.neo4j.cypher.internal.javacompat.GraphDatabaseCypherService.validateURLAccess(GraphDatabaseCypherService.java:68)
+	at org.neo4j.cypher.internal.runtime.interpreted.TransactionBoundQueryContext.getImportURL(TransactionBoundQueryContext.scala:894)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$getImportURL$1.apply(ExceptionTranslatingQueryContext.scala:222)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext$$anonfun$getImportURL$1.apply(ExceptionTranslatingQueryContext.scala:222)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslationSupport$class.translateException(ExceptionTranslationSupport.scala:33)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.translateException(ExceptionTranslatingQueryContext.scala:41)
+	at org.neo4j.cypher.internal.compatibility.v3_5.ExceptionTranslatingQueryContext.getImportURL(ExceptionTranslatingQueryContext.scala:222)
+	at org.neo4j.cypher.internal.runtime.interpreted.DelegatingQueryContext.getImportURL(DelegatingQueryContext.scala:199)
+	at org.neo4j.cypher.internal.runtime.interpreted.pipes.LoadCSVPipe.getImportURL(LoadCSVPipe.scala:54)
+	at org.neo4j.cypher.internal.runtime.interpreted.pipes.LoadCSVPipe$$anonfun$internalCreateResults$1.apply(LoadCSVPipe.scala:110)
+	at org.neo4j.cypher.internal.runtime.interpreted.pipes.LoadCSVPipe$$anonfun$internalCreateResults$1.apply(LoadCSVPipe.scala:108)
+	at scala.collection.Iterator$$anon$12.nextCur(Iterator.scala:435)
+	at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:441)
+	at scala.collection.Iterator$$anon$12.hasNext(Iterator.scala:440)
+	at org.neo4j.cypher.internal.runtime.interpreted.pipes.EmptyResultPipe.internalCreateResults(EmptyResultPipe.scala:28)
+	at org.neo4j.cypher.internal.runtime.interpreted.pipes.PipeWithSource.createResults(Pipe.scala:76)
+	at org.neo4j.cypher.internal.runtime.interpreted.pipes.PipeWithSource.createResults(Pipe.scala:72)
+	at org.neo4j.cypher.internal.compatibility.v3_5.runtime.executionplan.BaseExecutionResultBuilderFactory$BaseExecutionWorkflowBuilder.build(DefaultExecutionResultBuilderFactory.scala:61)
+	at org.neo4j.cypher.internal.compatibility.InterpretedRuntime$InterpretedExecutionPlan.run(InterpretedRuntime.scala:84)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:205)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery$$anonfun$execute$3.apply(CypherCurrentCompiler.scala:190)
+	at org.neo4j.cypher.exceptionHandler$runSafely$.apply(exceptionHandler.scala:89)
+	at org.neo4j.cypher.internal.compatibility.CypherCurrentCompiler$CypherExecutableQuery.execute(CypherCurrentCompiler.scala:224)
+	at org.neo4j.cypher.internal.ExecutionEngine.execute(ExecutionEngine.scala:102)
+	at org.neo4j.cypher.internal.javacompat.ExecutionEngine.executeQuery(ExecutionEngine.java:85)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachineV1SPI$BoltResultHandleV1.start(TransactionStateMachineV1SPI.java:189)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State.startExecution(TransactionStateMachine.java:506)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$1.execute(TransactionStateMachine.java:300)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine$State$1.run(TransactionStateMachine.java:269)
+	at org.neo4j.bolt.v1.runtime.TransactionStateMachine.run(TransactionStateMachine.java:110)
+	at org.neo4j.bolt.v3.runtime.ReadyState.processRunMessage(ReadyState.java:85)
+	at org.neo4j.bolt.v3.runtime.ReadyState.processUnsafe(ReadyState.java:56)
+	at org.neo4j.bolt.v3.runtime.FailSafeBoltStateMachineState.process(FailSafeBoltStateMachineState.java:48)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.nextState(BoltStateMachineV1.java:144)
+	at org.neo4j.bolt.v1.runtime.BoltStateMachineV1.process(BoltStateMachineV1.java:92)
+	at org.neo4j.bolt.messaging.BoltRequestMessageReader.lambda$doRead$1(BoltRequestMessageReader.java:89)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:191)
+	at org.neo4j.bolt.runtime.DefaultBoltConnection.processNextBatch(DefaultBoltConnection.java:139)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.executeBatch(ExecutorBoltScheduler.java:171)
+	at org.neo4j.bolt.runtime.ExecutorBoltScheduler.lambda$scheduleBatchOrHandleError$2(ExecutorBoltScheduler.java:154)
+	at java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1590)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.net.URISyntaxException: Illegal character in path at index 10: file:/test copy.csv
+	at java.net.URI$Parser.fail(URI.java:2848)
+	at java.net.URI$Parser.checkChars(URI.java:3021)
+	at java.net.URI$Parser.parseHierarchical(URI.java:3105)
+	at java.net.URI$Parser.parse(URI.java:3053)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URL.toURI(URL.java:939)
+	at org.neo4j.kernel.impl.security.FileURLAccessRule.validate(FileURLAccessRule.java:64)
+	... 47 more
+2019-05-22 02:03:03.691+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1258, gcTime=0, gcCount=0}
+2019-05-22 02:03:09.155+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 856 checkpoint started...
+2019-05-22 02:03:09.199+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 856 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b].
+2019-05-22 02:03:09.213+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 856 checkpoint completed in 56ms
+2019-05-22 02:03:09.215+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-22 02:03:42.072+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=161, gcTime=0, gcCount=0}
+2019-05-22 02:04:19.034+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 680382 seconds: 
+CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-22 02:04:19.040+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 680382 seconds: CALL db.labels() YIELD label
+RETURN {name:'labels', data:COLLECT(label)[..1000]} as result
+UNION ALL
+CALL db.relationshipTypes() YIELD relationshipType
+RETURN {name:'relationshipTypes', data:COLLECT(relationshipType)[..1000]} as result
+UNION ALL
+CALL db.propertyKeys() YIELD propertyKey
+RETURN {name:'propertyKeys', data:COLLECT(propertyKey)[..1000]} as result
+UNION ALL
+CALL dbms.functions() YIELD name, signature, description
+RETURN {name:'functions', data: collect({name: name, signature: signature, description: description})} AS result
+UNION ALL
+CALL dbms.procedures() YIELD name, signature, description
+RETURN {name:'procedures', data:collect({name: name, signature: signature, description: description})} as result
+UNION ALL
+MATCH () RETURN { name:'nodes', data:count(*) } AS result
+UNION ALL
+MATCH ()-[]->() RETURN { name:'relationships', data: count(*)} AS result
+
+2019-05-22 02:05:47.091+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 680464 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-05-22 02:05:47.093+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 680464 seconds: MATCH (a)-[r]->(b) WHERE id(a) IN $existingNodeIds AND id(b) IN $newNodeIds RETURN r;
+2019-05-22 02:09:06.213+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=105, gcTime=0, gcCount=0}
+2019-05-22 02:09:22.882+0000 INFO [o.n.c.i.ExecutionEngine] Discarded stale query from the query cache after 222 seconds: EXPLAIN LOAD CSV FROM 'file:///test_copy.csv' AS line
+match (from:Test1{name:line[0]}),(to:Test1{name:line[1]})
+MERGE (from)-[r:from]-(to)
+2019-05-22 02:09:22.890+0000 INFO [o.n.c.i.CommunityCompilerFactory] Discarded stale query from the query cache after 222 seconds: LOAD CSV FROM 'file:///test_copy.csv' AS line
+match (from:Test1{name:line[0]}),(to:Test1{name:line[1]})
+MERGE (from)-[r:from]-(to)
+2019-05-22 02:18:09.475+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 864 checkpoint started...
+2019-05-22 02:18:09.497+0000 INFO [o.n.k.i.s.c.CountsTracker] Rotated counts store at transaction 864 to [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.b], from [/Users/mac/major_graph/neo4j-community/data/databases/graph.db/neostore.counts.db.a].
+2019-05-22 02:18:09.520+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by scheduler for time threshold @ txId: 864 checkpoint completed in 36ms
+2019-05-22 02:18:09.520+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-22 02:29:09.535+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=121, gcTime=0, gcCount=0}
+2019-05-22 02:43:12.698+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=243, gcTime=0, gcCount=0}
+2019-05-22 02:43:12.904+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=289, gcTime=0, gcCount=0}
+2019-05-22 10:43:30.012+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1574, gcTime=0, gcCount=0}
+2019-05-22 10:43:30.930+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=817, gcTime=0, gcCount=0}
+2019-05-23 02:08:44.601+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=9899, gcTime=0, gcCount=0}
+2019-05-23 02:08:44.843+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=875, gcTime=0, gcCount=0}
+2019-05-23 02:10:11.005+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=1250, gcTime=0, gcCount=0}
+2019-05-23 02:10:11.934+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=828, gcTime=0, gcCount=0}
+2019-05-23 02:10:40.495+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=122, gcTime=0, gcCount=0}
+2019-05-23 02:10:40.619+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=112, gcTime=0, gcCount=0}
+2019-05-23 02:10:41.341+0000 WARN [o.n.k.i.c.VmPauseMonitorComponent] Detected VM stop-the-world pause: {pauseTime=107, gcTime=187, gcCount=1}
+2019-05-23 02:11:19.803+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Shutdown started
+2019-05-23 02:11:19.807+0000 INFO [o.n.k.a.DatabaseAvailabilityGuard] Database graph.db is unavailable.
+2019-05-23 02:11:19.925+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Shutting down 'graph.db' database.
+2019-05-23 02:11:19.946+0000 INFO [o.n.g.f.GraphDatabaseFacadeFactory] Shutdown started
+2019-05-23 02:11:19.984+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by database shutdown @ txId: 864 checkpoint started...
+2019-05-23 02:11:20.012+0000 INFO [o.n.k.i.t.l.c.CheckPointerImpl] Checkpoint triggered by database shutdown @ txId: 864 checkpoint completed in 28ms
+2019-05-23 02:11:20.013+0000 INFO [o.n.k.i.t.l.p.LogPruningImpl] No log version pruned, last checkpoint was made in version 0
+2019-05-23 02:11:20.074+0000 INFO [o.n.i.d.DiagnosticsManager] --- STOPPING diagnostics START ---
+2019-05-23 02:11:20.075+0000 INFO [o.n.i.d.DiagnosticsManager] --- STOPPING diagnostics END ---

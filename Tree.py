@@ -61,7 +61,7 @@ class SlideTree:
         #print(self.root.get_contents())
         return success
 
-    def build_nodes(self, current_node, slide):
+    def build_nodes(self, current_node, exact_node, slide):
         threshold = 0.8
         result = []
         possible_node = current_node
@@ -76,6 +76,9 @@ class SlideTree:
                     possible_node = possible_node.parent
                     match = SlideTree.parent_match(possible_node,nodename)
                     result.append([match, possible_node])
+                print('Match is ',match)
+                print('Possible Node is ',possible_node.get_name())
+                #print('Possible Node Content is ', possible_node.get_contents())
                 if nodename == possible_node.get_name():
                     new_node = possible_node
                 # 如果出现一个跟某个页内内容非常匹配的，查找是否跟已有子节点相同，相同则从该子节点添加，不相同则新建子节点
@@ -95,12 +98,14 @@ class SlideTree:
                             new_node = l[0][0]
                             #new_node = SlideNode(parentnode=possible_node, nodename=nodename)
                         else:
-                            new_node = SlideNode(parentnode= possible_node, nodename= nodename)
+                            new_node = SlideNode(parentnode= possible_node, nodename= nodename, contentlist=[])
                             possible_node.add_child(new_node)
+                            exact_node = new_node
                     #如果没有子节点，添加
                     else:
-                        new_node = SlideNode(parentnode= possible_node, nodename= nodename)
+                        new_node = SlideNode(parentnode= possible_node, nodename= nodename, contentlist=[])
                         possible_node.add_child(new_node)
+                        exact_node = new_node
                     #print(new_node.get_contents())
                     #current_node = new_node
                 #如果回溯到根节点，找一个跟该节点内容最相似的节点加入（待定）
@@ -117,16 +122,20 @@ class SlideTree:
                 #current_node = new_node
                 #print(new_node.get_contents())
 
-                    new_node = SlideNode(parentnode=current_node.get_parent(), nodename=nodename, contentlist=[])
+                    #new_node = SlideNode(parentnode=current_node.get_parent(), nodename=nodename, contentlist=[])
+                    new_node = SlideNode(parentnode=exact_node, nodename=nodename, contentlist=[])
+                    exact_node.add_child(new_node)
 
             else:
+                print('before add content, new node has',new_node.get_contents())
                 for para in shape:
                     new_node.add_content(para)
                     #print(para)
-                    #print(new_node.get_contents())
+                print('new node is',new_node.get_name())
+                print('new node content is ',new_node.get_contents())
         #print(new_node.get_name())
         #print(new_node.get_contents())
-        return new_node
+        return new_node,exact_node
 
     @staticmethod
     def get_node_name(shape):
@@ -198,7 +207,7 @@ class SlideTree:
                 result = 0.0
             return result
 
-
+'''
     def corpus(self,begin_i,chapter):
         segments = []
         base = []
@@ -212,10 +221,17 @@ class SlideTree:
                     break
         if segments[0][1] == 0:
             segments[0][2] = begin_i
+            segments[0][1] = 1
+        for i in range(0,len(segments)):
+            scope = []
+            if segments[i][1] == 0:
+                scope.append(segments[i-1][2])
+                while segments[i+1][1] == 0
+
         return segments
 
 
-
+'''
 '''
     def add_child(self, parent, child):
         parent.append(child)
@@ -257,3 +273,4 @@ class SlideNode:
 
     def get_name(self):
         return self.name
+
